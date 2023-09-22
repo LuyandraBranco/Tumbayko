@@ -47,7 +47,7 @@ export const ButtonsContainer = styled.div`
 
 export const Information = styled.div`
   width: 100%;
-  height: 15rem;
+  height: 13.7rem;
   display: flex;
   flex-direction: column;
 `;
