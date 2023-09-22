@@ -121,16 +121,16 @@ export const Button = styled.button`
   width: 8.5rem;
   height: 3rem;
   border: none;
-  background: ${(props) => props.theme.white};
-  border: 1px solid ${(props) => props.theme["orange-500"]};
-  color: ${(props) => props.theme.black};
+  background: ${(props) => props.theme["orange-500"]};
+  color: ${(props) => props.theme.white};
   font-size: 0.9rem;
   margin-right: 4rem;
   cursor: pointer;
 
   &:hover {
-    background: ${(props) => props.theme["orange-500"]};
-    color: ${(props) => props.theme.white};
+    background: ${(props) => props.theme.black};
+    transition: 0.5s;
+    border-radius: 5px;
   }
 `;
 
