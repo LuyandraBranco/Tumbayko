@@ -14,6 +14,7 @@ export const Title = styled.h1`
   color: ${(props) => props.theme["gray-900"]};
   margin: 2rem 0;
   text-transform: uppercase;
+  font-weight: 600;
 `;
 
 export const ItemsFAQContainer = styled.div`
