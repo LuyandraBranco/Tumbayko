@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ServiceContainer = styled.main`
   width: 100%;
-  height: 100vh;
+  height: 35rem;
   display: flex;
 `;
 

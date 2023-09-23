@@ -5,7 +5,7 @@ export const ServiceSlideContainer = styled.div`
   height: 10rem;
   background: ${(props) => props.theme.white};
   margin-top: -5%;
-  margin-bottom: 3%;
+  margin-bottom: 1%;
 
   display: flex;
   justify-content: center;

@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 export const ShippingContainer = styled.section`
   width: 100%;
-  height: 30rem;
+  height: 28rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 1rem;
+  border-bottom: 2px solid ${(props) => props.theme["gray-100"]};
 `;
 
 export const TitleShipping = styled.h1`

@@ -6,7 +6,7 @@ import {
   Title,
   Description,
 } from "./styles";
-import Ilustration from '../../assets/Ilustration1.jpg';
+import Ilustration from '../../assets/Ilustration1.png';
 
 export function Contact() {
   return (

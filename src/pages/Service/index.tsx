@@ -6,7 +6,7 @@ import {
   Title,
   Description,
 } from "./styles";
-import Ilustration from "../../assets/Ilustration3.jpg";
+import Ilustration from "../../assets/Ilustration3.jpeg";
 
 export function Service() {
   return (

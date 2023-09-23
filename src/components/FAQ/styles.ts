@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 export const FAQContainer = styled.section`
   width: 100%;
+  height: 25rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 4rem;
+  margin: 2rem 0;
 `;
 
 export const Title = styled.h1`
@@ -19,12 +20,15 @@ export const Title = styled.h1`
 
 export const ItemsFAQContainer = styled.div`
   width: 100%;
+  height: 20rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const ItemFAQColumn = styled.div`
-  width: 48%;
+  width: 47%;
+  height: 20rem;
   color: ${(props) => props.theme["gray-900"]};
 `;
 

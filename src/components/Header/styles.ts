@@ -64,7 +64,7 @@ export const NavLinks = styled.ul`
 export const Item = styled.li`
   margin-right: 1.8rem;
   margin-top: 0.7rem;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.6;
   cursor: pointer;
   font-size: 0.9rem;
