@@ -13,15 +13,15 @@ export const FirstContainer = styled.div`
   height: 18rem;
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid ${(props) => props.theme["gray-100"]};
 `;
 export const SecondContainer = styled.div`
   width: 100%;
-  height: 6rem;
+  height: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: ${(props) => props.theme["orange-500"]};
 `;
 
 export const InformationContainer = styled.div`
@@ -190,11 +190,12 @@ export const InputContainer = styled.div`
 `;
 
 export const Span = styled.span`
-  color: ${(props) => props.theme["gray-900"]};
+  color: ${(props) => props.theme.white};
   font-weight: 500;
 `;
 
 export const Link = styled.a`
   text-decoration: none;
-  color: ${(props) => props.theme["orange-500"]};
+  color: ${(props) => props.theme.white};
+  font-weight: 600;
 `;
