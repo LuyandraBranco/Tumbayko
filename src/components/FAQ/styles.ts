@@ -30,6 +30,20 @@ export const ItemFAQColumn = styled.div`
   width: 47%;
   height: 20rem;
   color: ${(props) => props.theme["gray-900"]};
+  overflow-y: auto;
+  scrollbar-width: thin; /* Para navegadores Firefox */
+  scrollbar-color: ${(props) => props.theme["orange-500"]} ${(props) => props.theme["gray-900"]}; /* Cor da thumb e da barra */
+
+  /* Estilizar a thumb do scrollbar */
+  &::-webkit-scrollbar-thumb {
+    background-color: ${(props) => props.theme["orange-500"]};
+    border-radius: 6px; /* Raio para torná-lo meio redondo */
+  }
+
+  /* Estilizar a barra do scrollbar */
+  &::-webkit-scrollbar {
+    width: 8px; /* Largura da barra */
+  }
 `;
 
 export const Details = styled.details`
@@ -44,7 +58,6 @@ export const Summary = styled.summary`
   display: flex;
   justify-content: space-between; /* Alinha o conteúdo à direita */
   align-items: center; /* Alinha verticalmente o conteúdo */
-  
 `;
 
 export const Answer = styled.p`
@@ -56,4 +69,3 @@ export const Answer = styled.p`
 export const ToggleSymbol = styled.span`
   font-weight: bold;
 `;
-
