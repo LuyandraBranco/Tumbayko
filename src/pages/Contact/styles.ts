@@ -18,7 +18,6 @@ export const InformationContainer = styled.div`
 export const ImageContainer = styled.div`
   width: 50%;
   height: 30rem;
-  margin-top: 2rem;
 `;
 
 export const Image = styled.img`
@@ -35,4 +34,27 @@ color: ${props=>props.theme["orange-500"]}
 
 export const Description = styled.p`
 margin: 0 5rem;
+text-align: justify;
+`;
+
+export const ContactInformationContainer = styled.div`
+width: 100%;
+display: flex;
+flex-direction: column;
+
+`;
+
+export const TitleInformation = styled.h3`
+color: ${props=>props.theme["orange-500"]};
+font-weight: 600;
+margin: 1rem 0;
+`;
+
+export const DescriptionInformation = styled.p`
+margin: 0.2rem 0;
+color: ${props=>props.theme["gray-900"]};
+`;
+
+export const Span = styled.span`
+color: ${props=>props.theme["orange-500"]};
 `;

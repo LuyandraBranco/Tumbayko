@@ -17,7 +17,7 @@ export const FAQData = [
   },
   {
     question: "Qual é o horário de funcionamento?",
-    answer: "O nosso horário de funcionamento é das 8h às 17h. De Segunda à Sábado.",
+    answer: "O nosso horário de funcionamento é das 8h às 17h. De Segunda a Sábado.",
   },
   {
     question: "Onde estão localizados?",

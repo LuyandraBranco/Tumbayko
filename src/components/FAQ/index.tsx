@@ -34,7 +34,7 @@ export function FAQ() {
 
   return (
     <FAQContainer>
-      <Title>perguntas mais frequentes</Title>
+      <Title>perguntas frequentes</Title>
       <ItemsFAQContainer>
         <ItemFAQColumn>
           {firstHalf.map((data: FAQItem, index: number) => (
