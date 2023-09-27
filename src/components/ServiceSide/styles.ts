@@ -12,6 +12,10 @@ export const ServiceSlideContainer = styled.div`
   align-items: center;
   border: 1px solid ${(props) => props.theme["orange-500"]};
 
+  @media (max-width: 480px) {
+    margin-top: 0;
+    height: 60rem;
+  }
 `;
 
 export const ItemService = styled.div`
@@ -24,7 +28,7 @@ export const ItemService = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  >svg{
+  > svg {
     color: ${(props) => props.theme["orange-500"]};
     text-align: left;
     margin-left: 0.8rem;

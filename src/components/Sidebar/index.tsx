@@ -1,4 +1,12 @@
-import { ContainerSidebar, NavLinks, Item, StyledLink, ButtonContainer, Styled, Button} from "./styles";
+import {
+  ContainerSidebar,
+  NavLinks,
+  Item,
+  StyledLink,
+  ButtonContainer,
+  Styled,
+  Button,
+} from "./styles";
 import { FaTimes } from "react-icons/fa";
 import {
   House,
@@ -7,6 +15,7 @@ import {
   Phone,
   UsersThree,
   Package,
+  AddressBook,
 } from "phosphor-react";
 
 export const Sidebar = ({ active }) => {
@@ -44,12 +53,13 @@ export const Sidebar = ({ active }) => {
             Contactos
           </StyledLink>
         </Item>
+        <Item>
+        <StyledLink to="/appointment">
+          <AddressBook size={24} />
+          Agendamento
+        </StyledLink>
+      </Item>
       </NavLinks>
-      <ButtonContainer>
-        <Styled to="/appointment">
-          <Button>Agendamento</Button>
-        </Styled>
-      </ButtonContainer>
     </ContainerSidebar>
   );
 };

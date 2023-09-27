@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContactContainer = styled.main`
   width: 100%;
-  height: 35rem;
+  height: 32rem;
   display: flex;
 `;
 

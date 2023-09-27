@@ -9,6 +9,10 @@ export const HeroContainer = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width:480px){
+    height: 20rem;
+  }
 `;
 
 export const SlideshowContainer = styled.div`
@@ -17,17 +21,29 @@ export const SlideshowContainer = styled.div`
   justify-content: center;
   width: 90%;
   height: 30rem;
+
+  @media (max-width:480px){
+    width: 75%;
+    height: 15rem;
+  }
 `;
 
 export const ImageContainer = styled.div`
   width: 45%;
   height: 30rem;
+
+  @media (max-width:480px){
+    width: 35%;
+    height: 10rem;
+    margin-top: -6rem;
+  }
 `;
 
 export const Image = styled.img`
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+
 `;
 
 export const TextContainer = styled.div`
@@ -36,20 +52,35 @@ export const TextContainer = styled.div`
   padding: 20px;
   display: flex;
   flex-direction: column;
+
+  @media (max-width:480px){
+    width: 65%;
+    height: 17rem;
+  }
 `;
 
 export const ButtonsContainer = styled.div`
   width: 100%;
   height: 12rem;
   display: flex;
-  margin-top: 5rem;
+  margin-top: 2rem;
+
+  @media (max-width:480px){
+    flex-direction: column;
+    height: 5rem;
+    margin-top: 0.5rem;
+  }
 `;
 
 export const Information = styled.div`
   width: 100%;
-  height: 13.7rem;
+  height: 25rem;
   display: flex;
   flex-direction: column;
+
+  @media (max-width:480px){
+    height:12rem;
+  }
 `;
 
 export const ButtonType = styled.button`
@@ -62,6 +93,12 @@ export const ButtonType = styled.button`
   color: ${(props) => props.theme.white};
   margin-right: 2rem;
   border-radius: 1px;
+
+  @media (max-width:480px){
+    width: 7.4rem;
+   margin-bottom: 0.5rem;
+   font-size: 0.6rem;
+  }
 `;
 
 export const Button = styled.button`
@@ -71,21 +108,15 @@ export const Button = styled.button`
   cursor: pointer;
   color: ${(props) =>
     props.theme.white}; /* Defina a cor laranja para as setas */
-  position: absolute;
-  top: 45%; /* Posicione as setas no centro vertical */
-  transform: translateY(-50%);
   padding: 10px; /* Adicione um espaço ao redor das setas */
-  z-index: 1; /* Para que as setas fiquem acima da imagem */
 `;
 
 export const LeftButton = styled(Button)`
-  left: 10px; /* Posicione a seta esquerda à esquerda com espaço */
-  bottom: 12rem;
+ 
 `;
 
 export const RightButton = styled(Button)`
-  right: 10px; /* Posicione a seta direita à direita com espaço */
-  bottom: 12rem;
+
 `;
 
 export const Title = styled.h1`
@@ -94,10 +125,20 @@ export const Title = styled.h1`
   margin-top: 3rem;
   margin-bottom: 1rem;
   color: ${(props) => props.theme.white};
+
+  @media (max-width:480px){
+    margin-top: 0.5rem;
+    margin-bottom: 0.3rem;
+   font-size: 0.8rem;
+  }
 `;
 
 export const Description = styled.p`
   font-size: 1.2rem;
   text-align: justify;
   color: ${(props) => props.theme.white};
+
+  @media (max-width:480px){
+   font-size: 0.5rem;
+  }
 `;

@@ -2,7 +2,7 @@ export const ShippingData = [
   {
     id: 1,
     title: "Envío Marítimo",
-    description: "O transporte econômico por mar, utilizando contêineres em navios de carga.",
+    description: "O transporte econômico por mar, utilizando contêineres em navios de carga."
   },
   {
     id: 2,

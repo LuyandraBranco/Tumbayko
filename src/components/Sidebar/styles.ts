@@ -1,24 +1,22 @@
 import styled from "styled-components";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export const ContainerSidebar = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
   position: fixed;
-  background: ${props=>props.theme["orange-500"]};
+  background: ${(props) => props.theme["orange-500"]};
   height: 100%;
   top: 0px;
   right: 0px;
+  z-index: 10;
   right: ${(props) => (props.sidebar ? "0" : "-100%")};
   animation: showSidebar 0.4s;
   color: #fff;
 
-  @media screen and (max-width: 680px) {
+  @media screen and (max-width: 1100px) {
     width: 100%;
-  }
-  @media screen (max-width: 780px) {
-    width: 50%;
   }
 
   > svg {
@@ -60,6 +58,7 @@ export const NavLinks = styled.ul`
 
 export const Item = styled.li`
   margin-top: 0.9rem;
+  margin-bottom: 1rem;
   font-weight: 700;
   cursor: pointer;
 `;
@@ -71,7 +70,7 @@ export const StyledLink = styled(NavLink)`
   &.active {
     color: ${(props) => props.theme.black};
   }
-
+  
   > svg {
     vertical-align: middle;
     margin-right: 0.5rem;
@@ -82,31 +81,3 @@ export const Styled = styled(NavLink)`
   text-decoration: none;
   color: ${(props) => props.theme.white};
 `;
-
-export const ButtonContainer = styled.div`
-  width: 100%;
-  height: 5.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-export const Button = styled.button`
-  width: 8rem;
-  height: 2.5rem;
-  border: none;
-  background: ${(props) => props.theme.white};
-  color: ${(props) => props.theme.black};
-  font-size: 0.9rem;
-  cursor: pointer;
-
-  &:hover {
-    background: ${(props) => props.theme["orange-500"]};
-    border: 1px solid ${(props) => props.theme["orange-500"]};
-    color: ${(props) => props.theme.black};
-  }
-`;
-
-
-
-

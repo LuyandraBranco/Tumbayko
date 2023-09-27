@@ -11,7 +11,7 @@ import {
   Description,
   ButtonsContainer,
   ButtonType,
-  Information
+  Information,
 } from "./styles";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
@@ -21,7 +21,6 @@ interface SlideshowProps {
 
 export function Hero({ data }: SlideshowProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [intervalId, setIntervalId] = useState<NodeJS.Timeout | null>(null);
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
@@ -32,27 +31,25 @@ export function Hero({ data }: SlideshowProps) {
   };
 
   useEffect(() => {
-    // Inicia o intervalo para avançar automaticamente os slides a cada 2 segundos
-    const id = setInterval(() => {
+    // Função para avançar automaticamente os slides a cada 2 segundos
+    const autoSlide = () => {
       nextSlide();
-    }, 8000);
+    };
 
-    setIntervalId(id);
+    const intervalId = setInterval(autoSlide, 8000);
 
     // Limpa o intervalo quando o componente for desmontado
     return () => {
-      if (intervalId) {
-        clearInterval(intervalId);
-      }
+      clearInterval(intervalId);
     };
-  }, [currentIndex, intervalId]);
+  }, [currentIndex, data]); // Adicione currentIndex e data como dependências
 
   return (
     <HeroContainer>
-      <SlideshowContainer>
-        <LeftButton onClick={prevSlide}>
+      <LeftButton onClick={prevSlide}>
           <FaArrowLeft />
         </LeftButton>
+      <SlideshowContainer>
         <TextContainer>
           <Information>
             <Title>{data[currentIndex].title}</Title>
@@ -63,9 +60,6 @@ export function Hero({ data }: SlideshowProps) {
             <ButtonType>Obtenha Informações</ButtonType>
           </ButtonsContainer>
         </TextContainer>
-        <RightButton onClick={nextSlide}>
-          <FaArrowRight />
-        </RightButton>
         <ImageContainer>
           <Image
             src={data[currentIndex].image}
@@ -73,6 +67,9 @@ export function Hero({ data }: SlideshowProps) {
           />
         </ImageContainer>
       </SlideshowContainer>
+      <RightButton onClick={nextSlide}>
+          <FaArrowRight />
+        </RightButton>
     </HeroContainer>
   );
 }
