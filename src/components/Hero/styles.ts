@@ -42,7 +42,11 @@ export const ImageContainer = styled.div`
 export const Image = styled.img`
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+
+  @media (max-width:480px){
+    object-fit: cover;
+  }
 
 `;
 

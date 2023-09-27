@@ -6,6 +6,12 @@ export const FooterContainer = styled.footer`
   height: 23rem;
   border-top: 2px solid ${(props) => props.theme["gray-100"]};
   padding-top: 0.4rem;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 480px) {
+    height: 65rem;
+  }
 `;
 
 export const FirstContainer = styled.div`
@@ -13,6 +19,11 @@ export const FirstContainer = styled.div`
   height: 18rem;
   display: flex;
   justify-content: center;
+
+  @media (max-width: 480px) {
+    height: 60rem;
+    flex-direction: column;
+  }
 `;
 export const SecondContainer = styled.div`
   width: 100%;
@@ -29,6 +40,13 @@ export const InformationContainer = styled.div`
   height: 18rem;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 480px) {
+    width: 100%;
+    height: 60rem;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const LogoContainer = styled.div`
@@ -36,24 +54,44 @@ export const LogoContainer = styled.div`
   height: 3rem;
   margin: 1rem 0rem;
   margin-left: 5%;
+
+  @media (max-width: 480px) {
+    width: 90%;
+    height: 8rem;
+    margin-bottom: 1rem;
+    margin-left: -1.5rem;
+  }
 `;
 
 export const Logo = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+
+  @media (max-width: 480px) {
+    width: 100%;
+  }
 `;
 
 export const TextContainer = styled.div`
   width: 100%;
   height: 5rem;
   margin-bottom: 0.5rem;
+
+  @media (max-width: 480px) {
+    width: 90%;
+    height: 8rem;
+  }
 `;
 
 export const Text = styled.p`
   color: ${(props) => props.theme["gray-900"]};
   margin-left: 2rem;
   font-weight: 500;
+
+  @media (max-width: 480px) {
+   margin-left: 0.5rem;
+  }
 `;
 
 export const MediaContainer = styled.div`
@@ -61,6 +99,13 @@ export const MediaContainer = styled.div`
   height: 5rem;
   display: flex;
   margin-left: 7%;
+
+  @media (max-width: 480px) {
+    width: 90%;
+    height: 2rem;
+    margin: 0;
+    margin-left: 2%;
+  }
 `;
 
 export const SocialMedia = styled.a`
@@ -93,6 +138,11 @@ export const ButtonMedia = styled.button`
       color: ${(props) => props.theme.white};
     }
   }
+
+  @media (max-width: 480px) {
+    width: 2rem;
+    height: 2rem;
+  }
 `;
 
 export const NavContainer = styled.nav`
@@ -100,11 +150,20 @@ export const NavContainer = styled.nav`
   height: 18rem;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 480px) {
+    width: 90%;
+    height: 15rem;
+  }
 `;
 export const Title = styled.h1`
   color: ${(props) => props.theme["orange-500"]};
   font-size: 1.4rem;
   margin: 1rem 0 1rem 2rem;
+
+  @media (max-width: 480px) {
+    font-size: 1.1rem;
+  }
 `;
 export const Navbar = styled.ul`
   display: flex;
@@ -140,6 +199,11 @@ export const ContactContainer = styled.div`
   height: 18rem;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 480px) {
+    width: 90%;
+    height: 15rem;
+  }
 `;
 
 export const DescriptionContact = styled.p`
@@ -154,6 +218,11 @@ export const SubscribeContainer = styled.div`
   height: 18rem;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 480px) {
+    width: 90%;
+    height: 15rem;
+  }
 `;
 
 export const Input = styled.input`
@@ -162,6 +231,10 @@ export const Input = styled.input`
   height: 2.5rem;
   color: ${(props) => props.theme["gray-900"]};
   margin-left: 2rem;
+
+  @media (max-width: 480px) {
+    width: 90%;
+  }
 `;
 
 export const ButtonSubscribe = styled.button`
@@ -192,6 +265,12 @@ export const InputContainer = styled.div`
 export const Span = styled.span`
   color: ${(props) => props.theme.white};
   font-weight: 500;
+
+  @media (max-width: 480px) {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-bottom: 0.2rem;
+  }
 `;
 
 export const Link = styled.a`
