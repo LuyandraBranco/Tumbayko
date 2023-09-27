@@ -17,6 +17,10 @@ export const Title = styled.h1`
   text-transform: uppercase;
   font-weight: 600;
   margin-bottom: 2rem;
+
+  @media (max-width: 480px) {
+   font-size: 1.2rem;
+  }
 `;
 
 export const ItemCollaborators = styled(Slider)`

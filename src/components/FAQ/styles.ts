@@ -8,6 +8,10 @@ export const FAQContainer = styled.section`
   justify-content: center;
   align-items: center;
   margin: 2rem 0;
+
+  @media (max-width: 480px) {
+    height: 45rem;
+  }
 `;
 
 export const Title = styled.h1`
@@ -16,6 +20,10 @@ export const Title = styled.h1`
   margin: 2rem 0;
   text-transform: uppercase;
   font-weight: 600;
+
+  @media (max-width: 480px) {
+    font-size: 1.2rem;
+  }
 `;
 
 export const ItemsFAQContainer = styled.div`
@@ -24,6 +32,11 @@ export const ItemsFAQContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 480px) {
+    height: 40rem;
+    flex-direction: column;
+  }
 `;
 
 export const ItemFAQColumn = styled.div`
@@ -32,7 +45,7 @@ export const ItemFAQColumn = styled.div`
   color: ${(props) => props.theme["gray-900"]};
   overflow-y: auto;
   scrollbar-width: thin; /* Para navegadores Firefox */
-  scrollbar-color: ${(props) => props.theme["orange-500"]} ${(props) => props.theme["gray-900"]}; /* Cor da thumb e da barra */
+  scrollbar-color: ${(props) => props.theme["orange-500"]}${(props) => props.theme["gray-900"]}; /* Cor da thumb e da barra */
 
   /* Estilizar a thumb do scrollbar */
   &::-webkit-scrollbar-thumb {
@@ -44,6 +57,11 @@ export const ItemFAQColumn = styled.div`
   &::-webkit-scrollbar {
     width: 8px; /* Largura da barra */
   }
+
+  @media (max-width: 480px) {
+   width: 95%;
+  }
+
 `;
 
 export const Details = styled.details`

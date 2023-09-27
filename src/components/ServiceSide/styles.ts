@@ -14,7 +14,11 @@ export const ServiceSlideContainer = styled.div`
 
   @media (max-width: 480px) {
     margin-top: 0;
-    height: 60rem;
+    width: 100%;
+    height: 40rem;
+    border: none;
+    flex-direction: column;
+    border-bottom: 2px solid ${props=>props.theme["gray-100"]};
   }
 `;
 
@@ -32,6 +36,10 @@ export const ItemService = styled.div`
     color: ${(props) => props.theme["orange-500"]};
     text-align: left;
     margin-left: 0.8rem;
+  }
+
+  @media (max-width: 480px) {
+   width: 90%;
   }
 `;
 

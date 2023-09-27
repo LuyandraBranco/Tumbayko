@@ -9,6 +9,11 @@ export const ShippingContainer = styled.section`
   align-items: center;
   margin-bottom: 1rem;
   border-bottom: 2px solid ${(props) => props.theme["gray-100"]};
+
+  @media (max-width: 480px) {
+    height: 38rem;
+    overflow-x: hidden;
+  }
 `;
 
 export const TitleShipping = styled.h1`
@@ -17,16 +22,27 @@ export const TitleShipping = styled.h1`
   margin-top: 2rem;
   text-transform: uppercase;
   font-weight: 600;
+
+  @media (max-width: 480px) {
+    font-size: 1.2rem;
+    text-align: center;
+  }
 `;
 
 export const InformationContainer = styled.div`
   width: 85%;
   height: 15rem;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   margin: 2rem 0;
+
+  @media (max-width: 480px) {
+    width: 90%;
+    flex-direction: column;
+    margin-top: 1rem;
+    height: 30rem;
+  }
 `;
 
 export const InformationItem = styled.div`
@@ -37,6 +53,13 @@ export const InformationItem = styled.div`
   margin: 0 1rem;
   border-radius: 6px;
   background: ${(props) => props.theme["orange-500"]};
+
+  @media (max-width: 480px) {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 1rem;
+    height: 9rem;
+  }
 `;
 
 export const NumberInformation = styled.div`
@@ -46,7 +69,8 @@ export const NumberInformation = styled.div`
   justify-content: center;
   margin-left: 3%;
   margin-right: 5%;
-  `;
+`;
+
 export const Number = styled.h1`
   color: ${(props) => props.theme["gray-900"]};
   font-size: 8.5rem;
@@ -62,6 +86,10 @@ export const Title = styled.h1`
   font-weight: 500;
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
+
+  @media (max-width: 480px) {
+   font-size: 1.1rem;
+  }
 `;
 
 export const Description = styled.p`
