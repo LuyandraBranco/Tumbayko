@@ -11,7 +11,11 @@ export const HeroContainer = styled.section`
   justify-content: center;
 
   @media (max-width: 480px) {
-    height: 20rem;
+    height: 30rem;
+  }
+
+  @media (min-width: 480px) and (max-width: 680px) {
+    height: 40rem;
   }
 `;
 
@@ -24,7 +28,14 @@ export const SlideshowContainer = styled.div`
 
   @media (max-width: 480px) {
     width: 75%;
-    height: 15rem;
+    height: 28rem;
+    flex-direction: column-reverse;
+  }
+
+  @media (min-width: 480px) and (max-width: 680px) {
+    width: 75%;
+    height: 38rem;
+    flex-direction: column-reverse;
   }
 `;
 
@@ -33,9 +44,15 @@ export const ImageContainer = styled.div`
   height: 30rem;
 
   @media (max-width: 480px) {
-    width: 35%;
-    height: 10rem;
-    margin-top: -6rem;
+    width: 100%;
+    height: 13rem;
+    border-bottom: 1px solid ${props=>props.theme["gray-50"]};
+  }
+
+  @media (min-width: 480px) and (max-width: 680px) {
+    width: 100%;
+    height: 15rem;
+    border-bottom: 1px solid ${props=>props.theme["gray-50"]};
   }
 `;
 
@@ -44,9 +61,10 @@ export const Image = styled.img`
   height: 100%;
   object-fit: contain;
 
-  @media (max-width: 480px) {
-    object-fit: cover;
+  @media (max-width: 680px) {
+    object-fit: contain;
   }
+
 `;
 
 export const TextContainer = styled.div`
@@ -57,8 +75,15 @@ export const TextContainer = styled.div`
   flex-direction: column;
 
   @media (max-width: 480px) {
-    width: 65%;
-    height: 17rem;
+    width: 100%;
+    height: 14rem;
+    justify-content: center;
+  }
+
+  @media (min-width: 480px) and (max-width: 680px) {
+    width: 100%;
+    height: 15rem;
+    justify-content: center;
   }
 `;
 
@@ -73,6 +98,12 @@ export const ButtonsContainer = styled.div`
     height: 5rem;
     margin-top: 0.5rem;
   }
+
+  @media (min-width: 480px) and (max-width: 680px) {
+    flex-direction: column;
+    height: 6rem;
+    margin-top: 0.5rem;
+  }
 `;
 
 export const Information = styled.div`
@@ -83,6 +114,10 @@ export const Information = styled.div`
 
   @media (max-width: 480px) {
     height: 12rem;
+  }
+
+  @media (min-width: 480px) and (max-width: 680px) {
+    height: 13rem;
   }
 `;
 
@@ -103,9 +138,14 @@ export const ButtonType = styled.button`
     font-size: 0.6rem;
   }
 
-  @media (min-width: 800px) and (max-width: 900px) {
-    width: 11rem;
-    font-size: 0.8rem;
+  @media (min-width: 480px) and (max-width: 680px) {
+    width: 13rem;
+    margin-bottom: 0.4rem;
+    font-size: 0.6rem;
+  }
+
+  @media (min-width: 681px) and (max-width: 900px) {
+    font-size: 0.77898rem;
     margin-right: 1rem;
     height: 2.8rem;
   }
@@ -138,7 +178,13 @@ export const Title = styled.h1`
     font-size: 0.8rem;
   }
 
-  @media (min-width: 800px) and (max-width: 900px) {
+  @media (min-width: 480px) and (max-width: 680px) {
+    margin-top: 0.5rem;
+    margin-bottom: 0.3rem;
+    font-size: 1.2rem;
+  }
+
+  @media (min-width: 681px) and (max-width: 900px) {
     font-size: 1.7rem;
   }
 `;
@@ -148,11 +194,11 @@ export const Description = styled.p`
   text-align: justify;
   color: ${(props) => props.theme.white};
 
-  @media (max-width: 480px) {
-    font-size: 0.5rem;
+  @media (max-width: 680px) {
+    font-size: 0.6rem;
   }
 
-  @media (min-width: 800px) and (max-width: 900px) {
+  @media (min-width: 681px) and (max-width: 900px) {
     font-size: 1rem;
   }
 `;

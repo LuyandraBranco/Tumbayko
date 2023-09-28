@@ -12,6 +12,11 @@ export const FAQContainer = styled.section`
   @media (max-width: 480px) {
     height: 45rem;
   }
+
+  @media (min-width: 480px) and (max-width: 680px) {
+    height: 47rem;
+  }
+
 `;
 
 export const Title = styled.h1`
@@ -24,6 +29,14 @@ export const Title = styled.h1`
   @media (max-width: 480px) {
     font-size: 1.2rem;
   }
+
+  @media (min-width: 480px) and (max-width: 680px) {
+    font-size: 1.4rem;
+  }
+
+  @media (min-width: 681px) and (max-width: 891px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const ItemsFAQContainer = styled.div`
@@ -33,11 +46,15 @@ export const ItemsFAQContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  
 
-  @media (max-width: 480px) {
+  @media (max-width: 680px) {
     height: 40rem;
     flex-direction: column;
+    justify-content: center;
+  }
+
+  @media (min-width: 681px) and (max-width: 891px) {
+    height: 20rem;
   }
 `;
 
@@ -60,15 +77,23 @@ export const ItemFAQColumn = styled.div`
     width: 8px; /* Largura da barra */
   }
 
-  @media (max-width: 480px) {
-   width: 95%;
+  @media (max-width: 680px) {
+    width: 95%;
+    height: auto;
   }
 
+  @media (min-width: 681px) and (max-width: 930px) {
+    height: 20rem;
+  }
 `;
 
 export const Details = styled.details`
   margin: 0; /* Margem: superior direita inferior esquerda */
   cursor: pointer;
+
+  @media (min-width: 681px) and (max-width: 1050px) {
+    font-size: 0.9rem;
+  }
 `;
 
 export const Summary = styled.summary`
@@ -78,12 +103,17 @@ export const Summary = styled.summary`
   display: flex;
   justify-content: space-between; /* Alinha o conteúdo à direita */
   align-items: center; /* Alinha verticalmente o conteúdo */
+
+  @media (min-width: 681px) and (max-width: 891px) {
+   padding: 1.8%;
+  }
 `;
 
 export const Answer = styled.p`
   padding: 2%;
   color: ${(props) => props.theme.black};
   border-bottom: 2px solid ${(props) => props.theme["gray-100"]};
+
 `;
 
 export const ToggleSymbol = styled.span`

@@ -16,7 +16,7 @@ export const HeaderContainer = styled.header`
     margin-right: 1rem;
     display: none;
 
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 910px) {
       display: inline;
     }
   }
@@ -56,7 +56,7 @@ export const NavLinks = styled.ul`
   list-style: none;
   margin-top: 1rem;
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 910px) {
     display: none;
   }
 `;
@@ -112,7 +112,7 @@ export const IconsContainer = styled(LogoContainer)`
     padding: 0.2rem;
   }
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 910px) {
     display: none;
   }
 `;

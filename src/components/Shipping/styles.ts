@@ -11,8 +11,15 @@ export const ShippingContainer = styled.section`
   border-bottom: 2px solid ${(props) => props.theme["gray-100"]};
 
   @media (max-width: 480px) {
+    height: 33rem;
+  }
+
+  @media (min-width: 480px) and (max-width: 680px) {
+    height: 35rem;
+  }
+
+  @media (min-width: 681px) and (max-width: 891px) {
     height: 38rem;
-    overflow-x: hidden;
   }
 `;
 
@@ -21,10 +28,21 @@ export const TitleShipping = styled.h1`
   color: ${(props) => props.theme["gray-900"]};
   text-transform: uppercase;
   font-weight: 600;
+  text-align: center;
 
   @media (max-width: 480px) {
     font-size: 1.2rem;
-    text-align: center;
+    margin-top: 2rem;
+  }
+
+  @media (min-width: 480px) and (max-width: 680px) {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+  }
+
+  @media (min-width: 681px) and (max-width: 891px) {
+    margin-top: 2rem;
+    font-size: 1.5rem;
   }
 `;
 
@@ -39,7 +57,21 @@ export const InformationContainer = styled.div`
   @media (max-width: 480px) {
     width: 90%;
     flex-direction: column;
-    margin-top: 1rem;
+    justify-content: center;
+    height: 25rem;
+  }
+
+  @media (min-width: 480px) and (max-width: 680px) {
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    height: 25rem;
+  }
+
+  @media (min-width: 681px) and (max-width: 891px) {
+    width: 83%;
+    flex-direction: column;
+    justify-content: center;
     height: 30rem;
   }
 `;
@@ -55,10 +87,16 @@ export const InformationItem = styled.div`
 
   @media (max-width: 480px) {
     width: 100%;
-    margin: 0;
     margin-bottom: 1rem;
-    height: 9rem;
+    height: 7rem;
   }
+
+  @media (min-width: 480px) and (max-width: 891px) {
+    width: 100%;
+    margin-bottom: 1rem;
+    height: 8rem;
+  }
+
 `;
 
 export const NumberInformation = styled.div`
@@ -68,31 +106,70 @@ export const NumberInformation = styled.div`
   justify-content: center;
   margin-left: 3%;
   margin-right: 5%;
+
+  @media (max-width: 480px) {
+    height: 6rem;
+  }
+
+  @media (min-width: 480px) and (max-width: 891px) {
+    height: 7rem;
+  }
 `;
 
 export const Number = styled.h1`
   color: ${(props) => props.theme["gray-900"]};
   font-size: 8.5rem;
   margin-top: -2.8rem;
+
+  @media (max-width: 480px) {
+    font-size: 6rem;
+    margin-top: -2rem;
+  }
+
+  @media (min-width: 480px) and (max-width: 891px) {
+    font-size: 7rem;
+    margin-top: -2.2rem;
+  }
 `;
 
 export const TextInformation = styled.div`
   width: 60%;
   height: 8rem;
+
+  @media (max-width: 480px) {
+    height: 6rem;
+  }
+
+  @media (min-width: 480px) and (max-width: 891px) {
+    height: 7rem;
+  }
 `;
 
 export const Title = styled.h1`
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1.09rem;
 
   @media (max-width: 480px) {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
+
+  @media (min-width: 480px) and (max-width: 680px) {
+    font-size: 1rem;
+  }
+
 `;
 
 export const Description = styled.p`
   color: ${(props) => props.theme.white};
   text-align: left;
   font-size: 0.9rem;
+
+  @media (max-width: 480px) {
+    font-size: 0.7rem;
+  }
+
+  @media (min-width: 480px) and (max-width: 910px) {
+    font-size: 0.8rem;
+  }
 `;
