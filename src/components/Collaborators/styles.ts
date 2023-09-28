@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const CollaboratorsContainer = styled.section`
   width: 100%;
-  height: 15rem;
+  height: 18rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,28 +19,28 @@ export const Title = styled.h1`
   margin-bottom: 2rem;
 
   @media (max-width: 480px) {
-   font-size: 1.2rem;
+    font-size: 1.2rem;
   }
 `;
 
 export const ItemCollaborators = styled(Slider)`
-  width: 90%;
+  width: 92%;
   height: 8rem;
   margin-bottom: 2rem;
   display: flex;
   justify-content: center;
-  /* background: ${(props) => props.theme["gray-100"]}; */
 `;
 
 export const CollaboratorsImageContainer = styled.div`
   width: 10rem;
   height: 8rem;
   padding-right: 5rem;
+  border: 1px solid ${(props) => props.theme["gray-100"]};
+  display: flex;
+  justify-content: center;
 `;
 export const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: contain;
 `;
-
-

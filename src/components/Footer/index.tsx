@@ -30,7 +30,6 @@ import {
   InstagramLogo,
   PaperPlaneRight,
   TiktokLogo,
-  YoutubeLogo,
 } from "phosphor-react";
 
 export function Footer() {
@@ -43,30 +42,24 @@ export function Footer() {
           </LogoContainer>
           <TextContainer>
             <Text>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti
-              illo laudantium architecto ea?
-              illo laudantium ?
+            Somos uma empresa firmada no comércio internacional,
+             temos como objetivo facilitar o seu acesso ao mercado mundial sem precisar sair de Angola.
             </Text>
           </TextContainer>
           <MediaContainer>
-            <SocialMedia href="#">
+            <SocialMedia href="https://www.facebook.com/profile.php?id=100089799934674">
               <ButtonMedia>
                 <FacebookLogo size={24} />
               </ButtonMedia>
             </SocialMedia>
-            <SocialMedia href="#">
+            <SocialMedia href="https://www.instagram.com/tumbayko_tem_tudo/">
               <ButtonMedia>
                 <InstagramLogo size={24} />
               </ButtonMedia>
             </SocialMedia>
-            <SocialMedia href="#">
+            <SocialMedia href="https://www.tiktok.com/@tumbaykotemtudo">
               <ButtonMedia>
                 <TiktokLogo size={24} />
-              </ButtonMedia>
-            </SocialMedia>
-            <SocialMedia href="#">
-              <ButtonMedia>
-                <YoutubeLogo size={24} />
               </ButtonMedia>
             </SocialMedia>
           </MediaContainer>
@@ -106,8 +99,8 @@ export function Footer() {
         </SubscribeContainer>
       </FirstContainer>
       <SecondContainer>
-        <Span>Copyright &copy; 2023 <Link href="#">Tumbayko</Link>. Todos os direitos Reservados</Span>
-        <Span>Desenvolvido por <Link href="#">Luyandra Branco</Link></Span>
+        <Span>Copyright &copy; 2023 <Link href="https://www.instagram.com/tumbayko_tem_tudo/">Tumbayko</Link>. Todos os direitos Reservados</Span>
+        <Span>Desenvolvido por <Link href="luyfolio.vercel.app">Luyandra Branco</Link></Span>
       </SecondContainer>
     </FooterContainer>
   );

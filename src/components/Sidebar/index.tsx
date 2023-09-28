@@ -2,10 +2,7 @@ import {
   ContainerSidebar,
   NavLinks,
   Item,
-  StyledLink,
-  ButtonContainer,
-  Styled,
-  Button,
+  StyledLink
 } from "./styles";
 import { FaTimes } from "react-icons/fa";
 import {
@@ -29,32 +26,32 @@ export const Sidebar = ({ active }) => {
 
       <NavLinks>
         <Item>
-          <StyledLink to="/">
+          <StyledLink to="/" onClick={closeSidebar}>
             <House size={24} />
             Home
           </StyledLink>
         </Item>
         <Item>
-          <StyledLink to="/service">
+          <StyledLink to="/service" onClick={closeSidebar}>
             {" "}
             <Package size={24} />
             Serviços
           </StyledLink>
         </Item>
         <Item>
-          <StyledLink to="/about">
+          <StyledLink to="/about" onClick={closeSidebar}>
             <UsersThree size={24} />
             Quem somos
           </StyledLink>
         </Item>
         <Item>
-          <StyledLink to="/contact">
+          <StyledLink to="/contact" onClick={closeSidebar}>
             <Phone size={24} />
             Contactos
           </StyledLink>
         </Item>
         <Item>
-        <StyledLink to="/appointment">
+        <StyledLink to="/appointment" onClick={closeSidebar}>
           <AddressBook size={24} />
           Agendamento
         </StyledLink>

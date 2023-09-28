@@ -27,11 +27,13 @@ export const Title = styled.h1`
 `;
 
 export const ItemsFAQContainer = styled.div`
-  width: 100%;
-  height: 20rem;
+  width: 92%;
+  height: 17rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  
 
   @media (max-width: 480px) {
     height: 40rem;
@@ -41,7 +43,7 @@ export const ItemsFAQContainer = styled.div`
 
 export const ItemFAQColumn = styled.div`
   width: 47%;
-  height: 20rem;
+  height: 17rem;
   color: ${(props) => props.theme["gray-900"]};
   overflow-y: auto;
   scrollbar-width: thin; /* Para navegadores Firefox */
@@ -65,7 +67,7 @@ export const ItemFAQColumn = styled.div`
 `;
 
 export const Details = styled.details`
-  margin: 0 5% 0 10%; /* Margem: superior direita inferior esquerda */
+  margin: 0; /* Margem: superior direita inferior esquerda */
   cursor: pointer;
 `;
 

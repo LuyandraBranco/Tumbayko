@@ -10,7 +10,7 @@ export const ServiceSlideContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid ${(props) => props.theme["orange-500"]};
+  border: 2px solid ${(props) => props.theme["gray-50"]};
 
   @media (max-width: 480px) {
     margin-top: 0;
@@ -23,9 +23,9 @@ export const ServiceSlideContainer = styled.div`
 `;
 
 export const ItemService = styled.div`
-  width: 23%;
+  width: 21%;
   height: 9rem;
-  margin: 0 1rem;
+  margin: 0 0.5rem;
   background: ${(props) => props.theme.white};
 
   display: flex;

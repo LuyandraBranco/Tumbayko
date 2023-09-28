@@ -13,23 +13,21 @@ export function ServiceSlide() {
         <Package size={32} />
         <Title>Importação</Title>
         <Description>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Na Tumbayko Tem Tudo, simplificamos a importação para você.
         </Description>
       </ItemService>
 
       <ItemService>
         <Package size={32} />
         <Title>Envio de malas</Title>
-        <Description>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </Description>
+        <Description>Suas malas, nosso compromisso de entrega.</Description>
       </ItemService>
 
       <ItemService>
         <Package size={32} />
         <Title>Envio de mercadoria</Title>
         <Description>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Facilitamos o transporte de suas mercadorias com eficiência.
         </Description>
       </ItemService>
 
@@ -37,7 +35,7 @@ export function ServiceSlide() {
         <Package size={32} />
         <Title>Venda de matérias</Title>
         <Description>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Na Tumbayko Tem Tudo, Oferecemos qualidade nas vendas.
         </Description>
       </ItemService>
     </ServiceSlideContainer>

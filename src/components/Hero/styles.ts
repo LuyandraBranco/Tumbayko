@@ -10,7 +10,7 @@ export const HeroContainer = styled.section`
   align-items: center;
   justify-content: center;
 
-  @media (max-width:480px){
+  @media (max-width: 480px) {
     height: 20rem;
   }
 `;
@@ -19,10 +19,10 @@ export const SlideshowContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 90%;
+  width: 92%;
   height: 30rem;
 
-  @media (max-width:480px){
+  @media (max-width: 480px) {
     width: 75%;
     height: 15rem;
   }
@@ -32,7 +32,7 @@ export const ImageContainer = styled.div`
   width: 45%;
   height: 30rem;
 
-  @media (max-width:480px){
+  @media (max-width: 480px) {
     width: 35%;
     height: 10rem;
     margin-top: -6rem;
@@ -44,10 +44,9 @@ export const Image = styled.img`
   height: 100%;
   object-fit: contain;
 
-  @media (max-width:480px){
+  @media (max-width: 480px) {
     object-fit: cover;
   }
-
 `;
 
 export const TextContainer = styled.div`
@@ -57,7 +56,7 @@ export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media (max-width:480px){
+  @media (max-width: 480px) {
     width: 65%;
     height: 17rem;
   }
@@ -69,7 +68,7 @@ export const ButtonsContainer = styled.div`
   display: flex;
   margin-top: 2rem;
 
-  @media (max-width:480px){
+  @media (max-width: 480px) {
     flex-direction: column;
     height: 5rem;
     margin-top: 0.5rem;
@@ -82,8 +81,8 @@ export const Information = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media (max-width:480px){
-    height:12rem;
+  @media (max-width: 480px) {
+    height: 12rem;
   }
 `;
 
@@ -98,10 +97,17 @@ export const ButtonType = styled.button`
   margin-right: 2rem;
   border-radius: 1px;
 
-  @media (max-width:480px){
+  @media (max-width: 480px) {
     width: 7.4rem;
-   margin-bottom: 0.5rem;
-   font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.6rem;
+  }
+
+  @media (min-width: 800px) and (max-width: 900px) {
+    width: 11rem;
+    font-size: 0.8rem;
+    margin-right: 1rem;
+    height: 2.8rem;
   }
 `;
 
@@ -115,13 +121,9 @@ export const Button = styled.button`
   padding: 10px; /* Adicione um espaço ao redor das setas */
 `;
 
-export const LeftButton = styled(Button)`
- 
-`;
+export const LeftButton = styled(Button)``;
 
-export const RightButton = styled(Button)`
-
-`;
+export const RightButton = styled(Button)``;
 
 export const Title = styled.h1`
   font-size: 2.5rem;
@@ -130,10 +132,14 @@ export const Title = styled.h1`
   margin-bottom: 1rem;
   color: ${(props) => props.theme.white};
 
-  @media (max-width:480px){
+  @media (max-width: 480px) {
     margin-top: 0.5rem;
     margin-bottom: 0.3rem;
-   font-size: 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  @media (min-width: 800px) and (max-width: 900px) {
+    font-size: 1.7rem;
   }
 `;
 
@@ -142,7 +148,11 @@ export const Description = styled.p`
   text-align: justify;
   color: ${(props) => props.theme.white};
 
-  @media (max-width:480px){
-   font-size: 0.5rem;
+  @media (max-width: 480px) {
+    font-size: 0.5rem;
+  }
+
+  @media (min-width: 800px) and (max-width: 900px) {
+    font-size: 1rem;
   }
 `;

@@ -75,7 +75,7 @@ export const Logo = styled.img`
 
 export const TextContainer = styled.div`
   width: 100%;
-  height: 5rem;
+  height: 7rem;
   margin-bottom: 0.5rem;
 
   @media (max-width: 480px) {
@@ -87,7 +87,7 @@ export const TextContainer = styled.div`
 export const Text = styled.p`
   color: ${(props) => props.theme["gray-900"]};
   margin-left: 2rem;
-  font-weight: 500;
+  font-weight: 420;
 
   @media (max-width: 480px) {
    margin-left: 0.5rem;
@@ -172,11 +172,9 @@ export const Navbar = styled.ul`
 `;
 
 export const Item = styled.li`
-  margin-bottom: 0.7rem;
-  font-weight: 500;
-  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-weight: 420;
   cursor: pointer;
-  font-size: 0.9rem;
   margin-left: 2rem;
 `;
 
@@ -210,7 +208,7 @@ export const DescriptionContact = styled.p`
   margin-left: 2rem;
   color: ${(props) => props.theme["gray-900"]};
   margin-bottom: 1rem;
-  font-weight: 500;
+  font-weight: 420;
 `;
 
 export const SubscribeContainer = styled.div`
@@ -231,6 +229,7 @@ export const Input = styled.input`
   height: 2.5rem;
   color: ${(props) => props.theme["gray-900"]};
   margin-left: 2rem;
+  border: 0.5px solid ${(props) => props.theme["orange-500"]};
 
   @media (max-width: 480px) {
     width: 90%;
@@ -238,17 +237,16 @@ export const Input = styled.input`
 `;
 
 export const ButtonSubscribe = styled.button`
-  width: 3.8rem;
+  width: 3.5rem;
   padding: 0.5rem;
-  height: 2.4rem;
+  height: 2.5rem;
   border: none;
   background: ${(props) => props.theme["orange-500"]};
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  margin: 0.4rem 0 0 2rem;
-  border-radius: 3px;
+  margin-left: -2rem;
 
   > svg {
     color: ${(props) => props.theme.white};
@@ -259,7 +257,6 @@ export const InputContainer = styled.div`
   width: 100%;
   height: 6rem;
   display: flex;
-  flex-direction: column;
 `;
 
 export const Span = styled.span`

@@ -3,19 +3,20 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body{
-   /* background: ${(props) => props.theme["gray-900"]}; */
-   color: ${(props) => props.theme.white};
-    -webkit-font-smoothing: antialiased;
+  
+  color: ${(props) => props.theme.white};
+  -webkit-font-smoothing: antialiased;
     
     /* Estilizar a barra de rolagem do corpo */
-    scrollbar-width: thin; /* Para navegadores Firefox */
-    scrollbar-color: ${(props) => props.theme["gray-900"]} ${(props) => props.theme["gray-900"]}; /* Cor da thumb e da barra */
+  scrollbar-width: thin; /* Para navegadores Firefox */
+  scrollbar-color: ${(props) => props.theme["gray-900"]} ${(props) =>
+  props.theme["gray-900"]}; /* Cor da thumb e da barra */
 
     /* Estilizar o thumb (indicador de posição) da barra de rolagem */
     &::-webkit-scrollbar-thumb {
@@ -26,9 +27,7 @@ body{
     /* Estilizar a barra de rolagem */
     &::-webkit-scrollbar {
       width: 12px; /* Largura da barra de rolagem */
-    }
-
-    
+    }  
 }
 
 body, input, textarea, button{
