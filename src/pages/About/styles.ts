@@ -134,6 +134,7 @@ export const ItemSecondContainer = styled.div`
     width: 90%;
     margin-bottom: 1rem;
     height: auto;
+    padding-top: 1rem;
     padding-bottom: 1rem;
   }
 `;
