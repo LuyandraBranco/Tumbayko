@@ -20,7 +20,7 @@ export function ServiceSlide() {
       <ItemService>
         <Package size={32} />
         <Title>Envio de malas</Title>
-        <Description>Suas malas, nosso compromisso de entrega.</Description>
+        <Description>Na Tumbayko Tem Tudo, suas malas, nosso compromisso de entrega.</Description>
       </ItemService>
 
       <ItemService>
@@ -35,7 +35,7 @@ export function ServiceSlide() {
         <Package size={32} />
         <Title>Venda de matérias</Title>
         <Description>
-          Na Tumbayko Tem Tudo, Oferecemos qualidade nas vendas.
+          Na Tumbayko Tem Tudo, oferecemos qualidade nas vendas.
         </Description>
       </ItemService>
     </ServiceSlideContainer>
