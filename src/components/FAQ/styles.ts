@@ -61,6 +61,7 @@ export const ItemsFAQContainer = styled.div`
 export const ItemFAQColumn = styled.div`
   width: 47%;
   height: 17rem;
+  font-size: 0.875rem;
   color: ${(props) => props.theme["gray-900"]};
   overflow-y: auto;
   scrollbar-width: thin; /* Para navegadores Firefox */

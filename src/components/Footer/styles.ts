@@ -4,8 +4,6 @@ import { NavLink } from "react-router-dom";
 export const FooterContainer = styled.footer`
   width: 100%;
   height: 23rem;
-  border-top: 2px solid ${(props) => props.theme["gray-100"]};
-  padding-top: 0.4rem;
   display: flex;
   flex-direction: column;
 
@@ -23,6 +21,7 @@ export const FirstContainer = styled.div`
   height: 18rem;
   display: flex;
   justify-content: center;
+  background: ${props=>props.theme["orange-500"]};
 
   @media (max-width: 680px) {
     height: 60rem;
@@ -40,7 +39,7 @@ export const SecondContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: ${(props) => props.theme["orange-500"]};
+  background: ${(props) => props.theme["gray-900"]};
 `;
 
 export const InformationContainer = styled.div`
@@ -105,13 +104,16 @@ export const TextContainer = styled.div`
 `;
 
 export const Text = styled.p`
-  color: ${(props) => props.theme["gray-900"]};
+  color: ${(props) => props.theme.white};
   margin-left: 2rem;
+  margin-right: 4rem;
   font-weight: 420;
   text-align: justify;
+  font-size: 0.875rem;
 
   @media (max-width: 680px) {
    margin-left: 0.5rem;
+   margin-right: 0;
   }
 
   @media (min-width: 681px) and (max-width: 891px) {
@@ -189,7 +191,7 @@ export const NavContainer = styled.nav`
   }
 `;
 export const Title = styled.h1`
-  color: ${(props) => props.theme["orange-500"]};
+  color: ${(props) => props.theme.white};
   font-size: 1rem;
   margin: 1rem 0 1rem 2rem;
 `;
@@ -204,11 +206,12 @@ export const Item = styled.li`
   font-weight: 420;
   cursor: pointer;
   margin-left: 2rem;
+  font-size: 0.875rem;
 `;
 
 export const StyledLink = styled(NavLink)`
   text-decoration: none;
-  color: ${(props) => props.theme["gray-900"]};
+  color: ${(props) => props.theme.white};
 
   &:hover {
     color: ${(props) => props.theme["orange-500"]};
@@ -238,9 +241,10 @@ export const ContactContainer = styled.div`
 
 export const DescriptionContact = styled.p`
   margin-left: 2rem;
-  color: ${(props) => props.theme["gray-900"]};
+  color: ${(props) => props.theme.white};
   margin-bottom: 1rem;
   font-weight: 420;
+  font-size: 0.875rem;
 
   @media (min-width: 681px) and (max-width: 891px) {
     font-size: 0.7rem;
@@ -266,6 +270,7 @@ export const Input = styled.input`
   color: ${(props) => props.theme["gray-900"]};
   margin-left: 2rem;
   border: 0.5px solid ${(props) => props.theme["orange-500"]};
+  font-size: 0.875rem;
 
   @media (max-width: 680px) {
     width: 90%;
@@ -281,7 +286,7 @@ export const ButtonSubscribe = styled.button`
   padding: 0.5rem;
   height: 2.5rem;
   border: none;
-  background: ${(props) => props.theme["orange-500"]};
+  background: ${(props) => props.theme["gray-900"]};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -302,6 +307,7 @@ export const InputContainer = styled.div`
 export const Span = styled.span`
   color: ${(props) => props.theme.white};
   font-weight: 500;
+  font-size: 0.875rem;
 
   @media (max-width: 680px) {
     font-size: 0.8rem;

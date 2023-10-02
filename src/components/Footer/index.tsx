@@ -83,7 +83,7 @@ export function Footer() {
         </NavContainer>
         <ContactContainer>
           <Title>Contactos</Title>
-          <DescriptionContact>+244945783746</DescriptionContact>
+          <DescriptionContact>+244937385547</DescriptionContact>
           <DescriptionContact>tumbayko.com</DescriptionContact>
           <DescriptionContact>tumbayko@gmail.com</DescriptionContact>
           <DescriptionContact>
