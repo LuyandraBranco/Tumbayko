@@ -5,15 +5,10 @@ export const ContactContainer = styled.main`
   height: 32rem;
   display: flex;
 
-  @media (max-width: 480px) {
-    height: 45rem;
+  @media (max-width: 891px) {
+    height: auto;
     flex-direction: column-reverse;
-  }
-
-  @media (min-width: 480px) and (max-width: 680px) {
-  }
-
-  @media (min-width: 681px) and (max-width: 891px) {
+    padding-bottom: 1rem;
   }
 `;
 
@@ -25,15 +20,10 @@ export const InformationContainer = styled.div`
   color: ${(props) => props.theme["gray-900"]};
   margin-top: 2rem;
 
-  @media (max-width: 480px) {
+  @media (max-width: 891px) {
     width: 100%;
-    height: 30rem;
-  }
-
-  @media (min-width: 480px) and (max-width: 680px) {
-  }
-
-  @media (min-width: 681px) and (max-width: 891px) {
+    height: auto;
+    padding-bottom: 2rem;
   }
 `;
 
@@ -65,14 +55,17 @@ export const Title = styled.h1`
   color: ${(props) => props.theme["orange-500"]};
 
   @media (max-width: 480px) {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin: 0 0 1rem 1.5rem;
   }
 
   @media (min-width: 480px) and (max-width: 680px) {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
+    margin: 1rem 0 1rem 2.7rem;
   }
 
   @media (min-width: 681px) and (max-width: 891px) {
+    font-size: 3rem;
   }
 `;
 
@@ -81,19 +74,21 @@ export const Description = styled.p`
   text-align: justify;
 
   @media (max-width: 480px) {
-    font-size: 0.7rem;
+    margin: 0 1.5rem 0rem 1.5rem;
   }
 
   @media (min-width: 480px) and (max-width: 680px) {
-    font-size: 2.2rem;
+    margin: 0 2.5rem 0rem 2.7rem;
   }
 
   @media (min-width: 681px) and (max-width: 891px) {
+    margin: 0 2.5rem 0rem 2.7rem;
   }
 `;
 
 export const ContactInformationContainer = styled.div`
   width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
 `;
