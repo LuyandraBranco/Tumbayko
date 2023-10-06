@@ -31,7 +31,9 @@ export function Header() {
   return (
     <HeaderContainer>
       <LogoContainer>
-        <img src={Logo} alt="" />
+        <Styled to="/">
+          <img src={Logo} alt="" />
+        </Styled>
       </LogoContainer>
       <Navbar>
         <NavLinks>
