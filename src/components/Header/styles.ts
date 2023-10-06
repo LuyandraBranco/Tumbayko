@@ -96,6 +96,12 @@ export const Styled = styled(NavLink)`
   color: ${(props) => props.theme.white};
 `;
 
+export const Styleds = styled(NavLink)`
+  text-decoration: none;
+  color: ${(props) => props.theme.white};
+  margin-left: 6rem;
+`;
+
 export const IconsContainer = styled(LogoContainer)`
   width: 20%;
   height: 5rem;

@@ -9,6 +9,7 @@ import {
   IconsContainer,
   Button,
   IconButton,
+  Styleds
 } from "./styles";
 import { useState } from "react";
 import { FaBars } from "react-icons/fa";
@@ -31,9 +32,9 @@ export function Header() {
   return (
     <HeaderContainer>
       <LogoContainer>
-        <Styled to="/">
+        <Styleds to="/">
           <img src={Logo} alt="" />
-        </Styled>
+        </Styleds>
       </LogoContainer>
       <Navbar>
         <NavLinks>
