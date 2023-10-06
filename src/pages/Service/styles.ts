@@ -128,15 +128,18 @@ export const Button = styled.button`
 
   @media (max-width: 480px) {
     margin: 0 1.5rem 0rem 1.5rem;
+    margin-top: 1rem;
     font-size: 0.875rem;
   }
 
   @media (min-width: 480px) and (max-width: 680px) {
     margin: 0 2rem 1rem 2rem;
     font-size: 0.875rem;
+    margin-top: 1rem;
   }
 
   @media (min-width: 681px) and (max-width: 891px) {
     margin: 0 2.5rem 0rem 2.7rem;
+    margin-top: 1rem;
   }
 `;
