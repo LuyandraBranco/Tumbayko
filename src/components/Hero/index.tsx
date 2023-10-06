@@ -50,7 +50,7 @@ export function Hero({ data }: SlideshowProps) {
           <FaArrowLeft />
         </LeftButton>
       <SlideshowContainer>
-        <TextContainer>
+        <TextContainer> 
           <Information>
             <Title>{data[currentIndex].title}</Title>
             <Description>{data[currentIndex].description}</Description>

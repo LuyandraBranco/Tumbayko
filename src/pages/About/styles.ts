@@ -17,6 +17,21 @@ export const FirstContainer = styled.div`
     flex-direction: column-reverse;
     padding-bottom: 2rem;
   }
+
+  @media (min-width: 892px) and (max-width: 920px) {
+    height: 32rem;
+  }
+
+  @media (min-width: 921px) and (max-width: 1000px) {
+    height: 30rem;
+  }
+
+  @media (min-width: 1001px) and (max-width: 1150px) {
+    height: 28rem;
+  }
+  @media (min-width: 1151px) and (max-width: 1300px) {
+    height: 25rem;
+  }
   
 `;
 
@@ -32,6 +47,17 @@ export const InformationContainer = styled.div`
     height: auto;
     padding-bottom: 1rem;
   }
+
+  @media (min-width: 921px) and (max-width: 1000px) {
+    height: 27rem;
+  }
+
+  @media (min-width: 1001px) and (max-width: 1150px) {
+    height: 26rem;
+  }
+  @media (min-width: 1151px) and (max-width: 1300px) {
+    height: 24rem;
+  }
 `;
 
 export const ImageContainer = styled.div`
@@ -42,19 +68,23 @@ export const ImageContainer = styled.div`
   @media (max-width: 480px) {
     width: 100%;
     height: 15rem;
-    margin-top: 0.4rem;
+    margin-top: 1.3rem;
   }
 
   @media (min-width: 480px) and (max-width: 680px) {
     width: 100%;
     height: 20rem;
-    margin-top: 0.4rem;
+    margin-top: 1.5rem;
   }
 
   @media (min-width: 681px) and (max-width: 891px) {
     width: 100%;
     height: 25rem;
     margin-top: 0.4rem;
+  }
+
+  @media (min-width: 892px) and (max-width: 1300px) {
+    height: 18rem;
   }
 `;
 
@@ -81,6 +111,11 @@ export const Title = styled.h1`
 
   @media (min-width: 681px) and (max-width: 891px) {
     font-size: 3rem;
+    margin: 0 2.5rem 0rem 2.7rem;
+  }
+
+  @media (min-width: 892px) and (max-width: 1300px) {
+    font-size: 2.8rem;
   }
 `;
 
@@ -99,6 +134,10 @@ export const Description = styled.p`
   @media (min-width: 681px) and (max-width: 891px) {
     margin: 0 2.5rem 0rem 2.7rem;
   }
+
+  @media (min-width: 892px) and (max-width: 1300px) {
+    font-size: 0.8rem;
+  }
 `;
 
 export const Span = styled.span`
@@ -116,7 +155,11 @@ export const SecondContainer = styled.div`
     height: auto;
     flex-direction: column;
     justify-content: center;
-    padding-bottom: 1rem;
+    padding: 1.5rem 0;
+  }
+
+  @media (min-width: 892px) and (max-width: 1300px) {
+    height: 30rem;
   }
 
 `;
@@ -136,6 +179,12 @@ export const ItemSecondContainer = styled.div`
     height: auto;
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+
+  @media (min-width: 892px) and (max-width: 1300px) {
+    width: 24%;
+    height: 22rem;
+    font-size: 0.875rem;
   }
 `;
 

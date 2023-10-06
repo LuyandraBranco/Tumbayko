@@ -33,7 +33,7 @@ export function ServiceSlide() {
 
       <ItemService>
         <Package size={32} />
-        <Title>Venda de matérias</Title>
+        <Title>Venda de materiais</Title>
         <Description>
           Na Tumbayko Tem Tudo, oferecemos qualidade nas vendas.
         </Description>

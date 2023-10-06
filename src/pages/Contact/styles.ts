@@ -30,6 +30,7 @@ export const InformationContainer = styled.div`
 export const ImageContainer = styled.div`
   width: 50%;
   height: 30rem;
+  background: ${props=>props.theme["gray-50"]};
 
   @media (max-width: 480px) {
     width: 100%;
@@ -37,16 +38,23 @@ export const ImageContainer = styled.div`
   }
 
   @media (min-width: 480px) and (max-width: 680px) {
+    width: 100%;
+    height: 25rem;
   }
 
   @media (min-width: 681px) and (max-width: 891px) {
+    width: 100%;
   }
+
 `;
 
 export const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: scale-down;
+
+  @media (min-width: 480px) and (max-width: 680px) {
+  }
 `;
 
 export const Title = styled.h1`
@@ -61,11 +69,16 @@ export const Title = styled.h1`
 
   @media (min-width: 480px) and (max-width: 680px) {
     font-size: 1.8rem;
-    margin: 1rem 0 1rem 2.7rem;
+    margin: 0 0 1rem 2rem;
   }
 
   @media (min-width: 681px) and (max-width: 891px) {
     font-size: 3rem;
+    margin: 0 2.5rem 0rem 2.7rem;
+  }
+
+  @media (min-width: 892px) and (max-width: 1300px) {
+    font-size: 2.8rem;
   }
 `;
 
@@ -75,14 +88,28 @@ export const Description = styled.p`
 
   @media (max-width: 480px) {
     margin: 0 1.5rem 0rem 1.5rem;
+    font-size: 0.875rem;
   }
 
   @media (min-width: 480px) and (max-width: 680px) {
-    margin: 0 2.5rem 0rem 2.7rem;
+    margin: 0 2rem 1rem 2rem;
+    font-size: 0.875rem;
   }
 
   @media (min-width: 681px) and (max-width: 891px) {
     margin: 0 2.5rem 0rem 2.7rem;
+  }
+
+  @media (min-width: 892px) and (max-width: 1100px) {
+    font-size: 0.8rem;
+  }
+
+  @media (min-width: 1101px) and (max-width: 1200px) {
+    font-size: 0.875rem;
+  }
+
+  @media (min-width: 1201px) and (max-width: 1300px) {
+    font-size: 1rem;
   }
 `;
 

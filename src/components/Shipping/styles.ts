@@ -154,7 +154,7 @@ export const Title = styled.h1`
     font-size: 0.9rem;
   }
 
-  @media (min-width: 480px) and (max-width: 680px) {
+  @media (min-width: 480px) and (max-width: 1060px) {
     font-size: 1rem;
   }
 
@@ -169,7 +169,7 @@ export const Description = styled.p`
     font-size: 0.7rem;
   }
 
-  @media (min-width: 480px) and (max-width: 910px) {
+  @media (min-width: 480px) and (max-width: 1000px) {
     font-size: 0.8rem;
   }
 `;

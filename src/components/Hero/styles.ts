@@ -11,7 +11,7 @@ export const HeroContainer = styled.section`
   justify-content: center;
 
   @media (max-width: 480px) {
-    height: 30rem;
+    height: 35rem;
   }
 
   @media (min-width: 480px) and (max-width: 680px) {
@@ -28,13 +28,13 @@ export const SlideshowContainer = styled.div`
 
   @media (max-width: 480px) {
     width: 75%;
-    height: 28rem;
+    height: 35rem;
     flex-direction: column-reverse;
   }
 
   @media (min-width: 480px) and (max-width: 680px) {
     width: 75%;
-    height: 38rem;
+    height: 40rem;
     flex-direction: column-reverse;
   }
 `;
@@ -46,13 +46,11 @@ export const ImageContainer = styled.div`
   @media (max-width: 480px) {
     width: 100%;
     height: 13rem;
-    border-bottom: 1px solid ${props=>props.theme["gray-50"]};
   }
 
   @media (min-width: 480px) and (max-width: 680px) {
     width: 100%;
-    height: 15rem;
-    border-bottom: 1px solid ${props=>props.theme["gray-50"]};
+    height: 20rem;
   }
 `;
 
@@ -64,7 +62,6 @@ export const Image = styled.img`
   @media (max-width: 680px) {
     object-fit: contain;
   }
-
 `;
 
 export const TextContainer = styled.div`
@@ -76,14 +73,33 @@ export const TextContainer = styled.div`
 
   @media (max-width: 480px) {
     width: 100%;
-    height: 14rem;
+    height: 20rem;
     justify-content: center;
+    background: ${(props) => props.theme["gray-900"]};
   }
 
   @media (min-width: 480px) and (max-width: 680px) {
     width: 100%;
-    height: 15rem;
+    height: 17rem;
     justify-content: center;
+    background: ${(props) => props.theme["gray-900"]};
+  }
+`;
+
+export const Information = styled.div`
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 480px) {
+    height: auto;
+    padding-bottom: 1rem;
+  }
+
+  @media (min-width: 480px) and (max-width: 680px) {
+    height: auto;
+    padding-bottom: 1rem;
   }
 `;
 
@@ -106,21 +122,6 @@ export const ButtonsContainer = styled.div`
   }
 `;
 
-export const Information = styled.div`
-  width: 100%;
-  height: 25rem;
-  display: flex;
-  flex-direction: column;
-
-  @media (max-width: 480px) {
-    height: 12rem;
-  }
-
-  @media (min-width: 480px) and (max-width: 680px) {
-    height: 13rem;
-  }
-`;
-
 export const ButtonType = styled.button`
   width: 14rem;
   height: 3.2rem;
@@ -130,22 +131,24 @@ export const ButtonType = styled.button`
   cursor: pointer;
   color: ${(props) => props.theme.white};
   margin-right: 2rem;
-  border-radius: 1px;
+  border-radius: 2px;
 
   @media (max-width: 480px) {
-    width: 7.4rem;
+    width: 9rem;
     margin-bottom: 0.5rem;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
+    background-color: ${(props) => props.theme["orange-500"]};
   }
 
   @media (min-width: 480px) and (max-width: 680px) {
     width: 13rem;
     margin-bottom: 0.4rem;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
+    background-color: ${(props) => props.theme["orange-500"]};
   }
 
-  @media (min-width: 681px) and (max-width: 900px) {
-    font-size: 0.77898rem;
+  @media (min-width: 681px) and (max-width: 1092px) {
+    font-size: 0.8rem;
     margin-right: 1rem;
     height: 2.8rem;
   }
@@ -159,6 +162,10 @@ export const Button = styled.button`
   color: ${(props) =>
     props.theme.white}; /* Defina a cor laranja para as setas */
   padding: 10px; /* Adicione um espaço ao redor das setas */
+
+  &:hover {
+    color: ${(props) => props.theme["gray-900"]};
+  }
 `;
 
 export const LeftButton = styled(Button)``;
@@ -174,17 +181,17 @@ export const Title = styled.h1`
 
   @media (max-width: 480px) {
     margin-top: 0.5rem;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
     font-size: 0.8rem;
   }
 
   @media (min-width: 480px) and (max-width: 680px) {
     margin-top: 0.5rem;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.6rem;
     font-size: 1.2rem;
   }
 
-  @media (min-width: 681px) and (max-width: 900px) {
+  @media (min-width: 681px) and (max-width: 1092px) {
     font-size: 1.7rem;
   }
 `;
@@ -195,10 +202,10 @@ export const Description = styled.p`
   color: ${(props) => props.theme.white};
 
   @media (max-width: 680px) {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 
-  @media (min-width: 681px) and (max-width: 900px) {
+  @media (min-width: 681px) and (max-width: 1092px) {
     font-size: 1rem;
   }
 `;

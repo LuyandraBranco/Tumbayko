@@ -8,11 +8,10 @@ export const FooterContainer = styled.footer`
   flex-direction: column;
 
   @media (max-width: 680px) {
-    height: 65rem;
+    height: auto;
   }
 
   @media (min-width: 681px) and (max-width: 891px) {
-    
   }
 `;
 
@@ -21,15 +20,11 @@ export const FirstContainer = styled.div`
   height: 18rem;
   display: flex;
   justify-content: center;
-  background: ${props=>props.theme["orange-500"]};
+  background: ${(props) => props.theme["orange-500"]};
 
   @media (max-width: 680px) {
-    height: 60rem;
+    height: auto;
     flex-direction: column;
-  }
-
-  @media (min-width: 681px) and (max-width: 891px) {
-    
   }
 `;
 export const SecondContainer = styled.div`
@@ -49,37 +44,30 @@ export const InformationContainer = styled.div`
   flex-direction: column;
 
   @media (max-width: 680px) {
-    width: 100%;
-    height: 60rem;
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (min-width: 681px) and (max-width: 891px) {
-    
+    width: 90%;
+    height: auto;
+    justify-content: flex-start;
   }
 `;
 
 export const LogoContainer = styled.div`
   width: 40%;
   height: 3rem;
-  margin: 1rem 0rem;
+  margin: 0.3rem 0rem;
   margin-left: 5%;
 
   @media (max-width: 480px) {
-    width: 90%;
-    height: 8rem;
-    margin-bottom: 1rem;
-    margin-left: -1.5rem;
+    width: 30%;
+    margin-left: 5.5%;
+    margin-bottom: 0.5rem;
   }
 
   @media (min-width: 481px) and (max-width: 680px) {
-    width: 90%;
-    height: 10rem;
+    width: 40%;
+    margin-left: 4%;
+    height: 5rem;
     margin-bottom: 1rem;
-    margin-left: -3rem;
   }
-
 `;
 
 export const Logo = styled.img`
@@ -99,7 +87,8 @@ export const TextContainer = styled.div`
 
   @media (max-width: 680px) {
     width: 90%;
-    height: 8rem;
+    height: auto;
+    padding-bottom: 2rem;
   }
 `;
 
@@ -111,30 +100,38 @@ export const Text = styled.p`
   text-align: justify;
   font-size: 0.875rem;
 
-  @media (max-width: 680px) {
-   margin-left: 0.5rem;
-   margin-right: 0;
+  @media (max-width: 480px) {
+    margin-left: 7%;
+    margin-right: 0;
+  }
+
+  @media (min-width: 481px) and (max-width: 680px) {
+    margin-left: 7%;
+    margin-right: 0;
   }
 
   @media (min-width: 681px) and (max-width: 891px) {
     font-size: 0.7rem;
     margin-left: 1rem;
   }
-
 `;
 
 export const MediaContainer = styled.div`
   width: 80%;
-  height: 5rem;
+  height: 3rem;
   display: flex;
   margin-left: 7%;
   margin-top: 0.5rem;
 
-  @media (max-width: 680px) {
-    width: 90%;
+  @media (max-width: 480px) {
+    margin-left: 5.5%;
+  }
+
+  @media (min-width: 481px) and (max-width: 680px) {
+    width: 80%;
     height: 2rem;
     margin: 0;
-    margin-left: 2%;
+    margin-left: 7%;
   }
 
   @media (min-width: 890px) and (max-width: 990px) {
@@ -187,13 +184,18 @@ export const NavContainer = styled.nav`
 
   @media (max-width: 680px) {
     width: 90%;
-    height: 15rem;
+    height: auto;
   }
 `;
 export const Title = styled.h1`
   color: ${(props) => props.theme.white};
   font-size: 1rem;
   margin: 1rem 0 1rem 2rem;
+
+  @media (max-width: 480px) {
+    margin-left: 6%;
+  }
+
 `;
 export const Navbar = styled.ul`
   display: flex;
@@ -207,6 +209,10 @@ export const Item = styled.li`
   cursor: pointer;
   margin-left: 2rem;
   font-size: 0.875rem;
+
+  @media (max-width: 480px) {
+    margin-left: 6%;
+  }
 `;
 
 export const StyledLink = styled(NavLink)`
@@ -235,7 +241,7 @@ export const ContactContainer = styled.div`
 
   @media (max-width: 680px) {
     width: 90%;
-    height: 15rem;
+    height: auto;
   }
 `;
 
@@ -245,6 +251,10 @@ export const DescriptionContact = styled.p`
   margin-bottom: 1rem;
   font-weight: 420;
   font-size: 0.875rem;
+
+  @media (max-width: 480px) {
+    margin-left: 6%;
+  }
 
   @media (min-width: 681px) and (max-width: 891px) {
     font-size: 0.7rem;
@@ -259,7 +269,7 @@ export const SubscribeContainer = styled.div`
 
   @media (max-width: 680px) {
     width: 90%;
-    height: 15rem;
+    height: auto;
   }
 `;
 
@@ -271,6 +281,10 @@ export const Input = styled.input`
   margin-left: 2rem;
   border: 0.5px solid ${(props) => props.theme["orange-500"]};
   font-size: 0.875rem;
+
+  @media (max-width: 480px) {
+    margin-left: 6%;
+  }
 
   @media (max-width: 680px) {
     width: 90%;

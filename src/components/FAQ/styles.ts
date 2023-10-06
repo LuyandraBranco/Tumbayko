@@ -10,11 +10,13 @@ export const FAQContainer = styled.section`
   margin: 2rem 0;
 
   @media (max-width: 480px) {
-    height: 45rem;
+    height: auto;
+    padding-bottom: 1rem;
   }
 
   @media (min-width: 480px) and (max-width: 680px) {
-    height: 47rem;
+    height: auto;
+    padding-bottom: 1rem;
   }
 
 `;
@@ -28,6 +30,7 @@ export const Title = styled.h1`
 
   @media (max-width: 480px) {
     font-size: 1.2rem;
+    margin: 1rem 0;
   }
 
   @media (min-width: 480px) and (max-width: 680px) {
@@ -48,7 +51,7 @@ export const ItemsFAQContainer = styled.div`
   flex-wrap: wrap;
 
   @media (max-width: 680px) {
-    height: 40rem;
+    height: auto;
     flex-direction: column;
     justify-content: center;
   }
