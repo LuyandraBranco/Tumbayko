@@ -25,7 +25,7 @@ import {
   Span,
   Link,
 } from "./styles";
-import LogoImage from "../../assets/logo.png";
+import LogoImage from "../../assets/logo2.png";
 import {
   FacebookLogo,
   InstagramLogo,

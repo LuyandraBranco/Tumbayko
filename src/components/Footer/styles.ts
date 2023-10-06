@@ -54,19 +54,23 @@ export const LogoContainer = styled.div`
   width: 40%;
   height: 3rem;
   margin: 0.3rem 0rem;
-  margin-left: 5%;
+  margin-left: -0.8%;
 
   @media (max-width: 480px) {
     width: 30%;
-    margin-left: 5.5%;
+    margin-left: 1%;
     margin-bottom: 0.5rem;
   }
 
   @media (min-width: 481px) and (max-width: 680px) {
     width: 40%;
-    margin-left: 4%;
+    margin-left: -2%;
     height: 5rem;
     margin-bottom: 1rem;
+  }
+
+  @media (min-width: 910px) and (max-width: 1400px) {
+    margin-left: 2%;
   }
 `;
 
