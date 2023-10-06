@@ -216,10 +216,6 @@ export const StyledLink = styled(NavLink)`
   text-decoration: none;
   color: ${(props) => props.theme.white};
 
-  &:hover {
-    color: ${(props) => props.theme["orange-500"]};
-  }
-
   @media (min-width: 681px) and (max-width: 891px) {
     font-size: 0.7rem;
   }

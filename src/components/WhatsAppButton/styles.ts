@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const WhatsAppButtonContainer = styled.div`
   position: fixed;
-  bottom: 1.25rem; /* Ajuste a posição vertical conforme necessário */
-  right: 1.25rem; /* Ajuste a posição horizontal conforme necessário */
+  bottom: 1.25rem;
+  right: 1.25rem;
   background-color: ${(props) => props.theme["green-200"]};
   color: ${(props) => props.theme.white};
   border-radius: 50%;
