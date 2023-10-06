@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   FooterContainer,
   FirstContainer,
@@ -22,7 +23,7 @@ import {
   ButtonSubscribe,
   InputContainer,
   Span,
-  Link
+  Link,
 } from "./styles";
 import LogoImage from "../../assets/logo.png";
 import {
@@ -31,8 +32,52 @@ import {
   PaperPlaneRight,
   TiktokLogo,
 } from "phosphor-react";
+// import dotenv from 'dotenv'; // Importe dotenv usando import
+
+// dotenv.config(); // Carrega as variáveis de ambiente do arquivo .env
+
+// import sgMail from '@sendgrid/mail'; // Importe sgMail usando import
+
+// sgMail.setApiKey(process.env.SENDGRID_API_KEY ?? '');
 
 export function Footer() {
+  const [email, setEmail] = useState("");
+
+  const handleSubscribe = async () => {
+    // Verifica se o campo de e-mail está vazio
+    if (!email) {
+      alert("Por favor, insira um endereço de e-mail.");
+      return;
+    }
+
+    try {
+      // Chama a função de envio de e-mail para notificação
+      await sendNotificationEmail(email);
+
+      // Limpa o campo de e-mail após o envio
+      setEmail("");
+      alert("E-mail de notificação enviado com sucesso!");
+    } catch (error) {
+      console.error("Erro ao enviar e-mail de notificação:", error);
+      alert(
+        "Erro ao enviar o e-mail de notificação. Tente novamente mais tarde."
+      );
+    }
+  };
+
+  const sendNotificationEmail = async (userEmail: string) => {
+    const msg = {
+      to: "seu-email@example.com", // Seu endereço de e-mail de notificação
+      from: "seu-email@example.com", // Deve ser um e-mail verificado no SendGrid
+      subject: "Novo usuário inscrito",
+      text: `Novo usuário se inscreveu com o e-mail: ${userEmail}`,
+      html: `<p>Novo usuário se inscreveu com o e-mail: ${userEmail}</p>`,
+    };
+
+    // Envie o e-mail de notificação
+    await sgMail.send(msg);
+  };
+
   return (
     <FooterContainer>
       <FirstContainer>
@@ -42,8 +87,9 @@ export function Footer() {
           </LogoContainer>
           <TextContainer>
             <Text>
-            Somos uma empresa firmada no comércio internacional,
-             temos como objetivo facilitar o seu acesso ao mercado mundial sem precisar sair de Angola.
+              Somos uma empresa firmada no comércio internacional, temos como
+              objetivo facilitar o seu acesso ao mercado mundial sem precisar
+              sair de Angola.
             </Text>
           </TextContainer>
           <MediaContainer>
@@ -93,14 +139,30 @@ export function Footer() {
         <SubscribeContainer>
           <Title>Obtenha as últimas informações</Title>
           <InputContainer>
-            <Input type="email" placeholder="Digite o seu email"></Input>
-            <ButtonSubscribe><PaperPlaneRight size={22} /></ButtonSubscribe>
+            <Input
+              type="email"
+              placeholder="Digite o seu email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <ButtonSubscribe onClick={handleSubscribe}>
+              <PaperPlaneRight size={22} />
+            </ButtonSubscribe>
           </InputContainer>
         </SubscribeContainer>
       </FirstContainer>
       <SecondContainer>
-        <Span>Copyright &copy; 2023 <Link href="https://www.instagram.com/tumbayko_tem_tudo/">Tumbayko</Link>. Todos os direitos Reservados</Span>
-        <Span>Desenvolvido por <Link href="luyfolio.vercel.app">Luyandra Branco</Link></Span>
+        <Span>
+          Copyright &copy; 2023{" "}
+          <Link href="https://www.instagram.com/tumbayko_tem_tudo/">
+            Tumbayko
+          </Link>
+          . Todos os direitos Reservados
+        </Span>
+        <Span>
+          Desenvolvido por{" "}
+          <Link href="luyfolio.vercel.app">Luyandra Branco</Link>
+        </Span>
       </SecondContainer>
     </FooterContainer>
   );

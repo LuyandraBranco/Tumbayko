@@ -3,6 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 import { defaultTheme } from "./styles/themes/default";
 import { GlobalStyle } from "./styles/global";
 import { Router } from "./Router";
+import { WhatsAppButton } from "./components/WhatsAppButton";
 
 export function App() {
   return (
@@ -11,6 +12,7 @@ export function App() {
         <Router />
       </BrowserRouter>
       <GlobalStyle />
+      <WhatsAppButton/>
     </ThemeProvider>
   );
 }
