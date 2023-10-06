@@ -20,7 +20,7 @@ export const FirstContainer = styled.div`
   height: 18rem;
   display: flex;
   justify-content: center;
-  background: ${(props) => props.theme["orange-500"]};
+  background: linear-gradient(270deg, #FF7538, ${props=>props.theme["orange-500"]});
 
   @media (max-width: 680px) {
     height: auto;
@@ -272,7 +272,7 @@ export const Input = styled.input`
   height: 2.5rem;
   color: ${(props) => props.theme["gray-900"]};
   margin-left: 2rem;
-  border: 0.5px solid ${(props) => props.theme["orange-500"]};
+  border: 1.5px solid ${(props) => props.theme["gray-900"]};
   font-size: 0.875rem;
 
   @media (max-width: 480px) {
@@ -302,6 +302,14 @@ export const ButtonSubscribe = styled.button`
   color: ${(props) => props.theme.white};
   margin-top: 0.5rem;
   font-size: 0.875rem;
+
+  @media (max-width: 480px) {
+    margin-left: 6%;
+  }
+
+  &:hover {
+    background: ${(props) => props.theme["green-200"]};
+  }
 `;
 
 export const InputContainer = styled.div`

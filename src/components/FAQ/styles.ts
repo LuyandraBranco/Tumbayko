@@ -22,7 +22,7 @@ export const FAQContainer = styled.section`
 `;
 
 export const Title = styled.h1`
-  font-size: 1.8rem;
+  font-size: 2.1rem;
   color: ${(props) => props.theme["gray-900"]};
   margin: 2rem 0;
   text-transform: uppercase;
@@ -64,7 +64,7 @@ export const ItemsFAQContainer = styled.div`
 export const ItemFAQColumn = styled.div`
   width: 47%;
   height: 17rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: ${(props) => props.theme["gray-900"]};
   overflow-y: auto;
   scrollbar-width: thin; /* Para navegadores Firefox */
@@ -84,6 +84,7 @@ export const ItemFAQColumn = styled.div`
   @media (max-width: 680px) {
     width: 95%;
     height: auto;
+    font-size: 0.875rem;
   }
 
   @media (min-width: 681px) and (max-width: 930px) {

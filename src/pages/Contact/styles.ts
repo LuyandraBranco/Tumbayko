@@ -83,7 +83,7 @@ export const Title = styled.h1`
 `;
 
 export const Description = styled.p`
-  margin: 0 5rem;
+  margin: 0 4.8rem;
   text-align: justify;
 
   @media (max-width: 480px) {

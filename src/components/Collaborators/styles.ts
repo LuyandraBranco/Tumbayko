@@ -12,7 +12,7 @@ export const CollaboratorsContainer = styled.section`
 `;
 
 export const Title = styled.h1`
-  font-size: 1.8rem;
+  font-size: 2.1rem;
   color: ${(props) => props.theme["gray-900"]};
   text-transform: uppercase;
   font-weight: 600;

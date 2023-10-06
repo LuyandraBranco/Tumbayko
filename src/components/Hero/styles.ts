@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const HeroContainer = styled.section`
   width: 100%;
   height: 35rem;
-  background-color: ${(props) => props.theme["orange-500"]};
+  background: linear-gradient(270deg, #FF7538, ${props=>props.theme["orange-500"]});
 
   display: flex;
   align-items: center;
