@@ -14,7 +14,7 @@ export function Collaborators() {
   const settings = {
     infinite: true,
     slidesToShow: 5, // Número de slides visíveis ao mesmo tempo
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     dots: true,
     responsive: [
       {
