@@ -149,10 +149,9 @@ export const ButtonMedia = styled.button`
   height: 2.5rem;
   border: none;
   margin-right: 1rem;
-  border-radius: 3px;
+  border-radius: 50%;
   cursor: pointer;
-  background: ${(props) => props.theme.white};
-  border: 1px solid ${(props) => props.theme["gray-100"]};
+  background: ${(props) => props.theme["gray-900"]};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,9 +160,8 @@ export const ButtonMedia = styled.button`
     color: ${(props) => props.theme["orange-500"]};
   }
   &:hover {
-    background: ${(props) => props.theme["orange-500"]};
+    background: ${(props) => props.theme["green-200"]};
     color: ${(props) => props.theme.white};
-    border: none;
 
     > svg {
       color: ${(props) => props.theme.white};
@@ -195,7 +193,6 @@ export const Title = styled.h1`
   @media (max-width: 480px) {
     margin-left: 6%;
   }
-
 `;
 export const Navbar = styled.ul`
   display: flex;
@@ -274,7 +271,7 @@ export const SubscribeContainer = styled.div`
 `;
 
 export const Input = styled.input`
-  width: 70%;
+  width: 80%;
   padding: 0.5rem;
   height: 2.5rem;
   color: ${(props) => props.theme["gray-900"]};
@@ -296,26 +293,26 @@ export const Input = styled.input`
 `;
 
 export const ButtonSubscribe = styled.button`
-  width: 3.5rem;
+  width: 8rem;
   padding: 0.5rem;
-  height: 2.5rem;
+  height: 3rem;
   border: none;
   background: ${(props) => props.theme["gray-900"]};
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  margin-left: -2rem;
-
-  > svg {
-    color: ${(props) => props.theme.white};
-  }
+  margin-left: 2rem;
+  color: ${(props) => props.theme.white};
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
 `;
 
 export const InputContainer = styled.div`
   width: 100%;
-  height: 6rem;
+  height: 12rem;
   display: flex;
+  flex-direction: column;
 `;
 
 export const Span = styled.span`

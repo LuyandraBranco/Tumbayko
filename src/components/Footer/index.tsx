@@ -146,7 +146,7 @@ export function Footer() {
               onChange={(e) => setEmail(e.target.value)}
             />
             <ButtonSubscribe onClick={handleSubscribe}>
-              <PaperPlaneRight size={22} />
+              Subscreva
             </ButtonSubscribe>
           </InputContainer>
         </SubscribeContainer>

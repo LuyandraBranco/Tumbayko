@@ -4,7 +4,7 @@ export const WhatsAppButtonContainer = styled.div`
   position: fixed;
   bottom: 1.25rem; /* Ajuste a posição vertical conforme necessário */
   right: 1.25rem; /* Ajuste a posição horizontal conforme necessário */
-  background-color: #25d366; /* Cor de fundo do botão */
+  background-color: ${(props) => props.theme["green-200"]};
   color: ${(props) => props.theme.white};
   border-radius: 50%;
   width: 3.75rem;
