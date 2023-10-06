@@ -123,16 +123,16 @@ export const NumberInformation = styled.div`
 export const Number = styled.h1`
   color: ${(props) => props.theme["gray-900"]};
   font-size: 8.5rem;
-  margin-top: -2rem;
+  margin-top: -2.8rem;
 
   @media (max-width: 480px) {
     font-size: 6rem;
-    margin-top: -1.2rem;
+    margin-top: -2rem;
   }
 
   @media (min-width: 480px) and (max-width: 891px) {
     font-size: 7rem;
-    margin-top: -1.397rem;
+    margin-top: -2.2rem;
   }
 `;
 

@@ -31,7 +31,7 @@ body{
 }
 
 body, input, textarea, button{
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 1rem;
 }
