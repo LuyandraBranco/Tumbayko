@@ -80,7 +80,7 @@ export const ImageContainer = styled.div`
   @media (min-width: 681px) and (max-width: 891px) {
     width: 100%;
     height: 25rem;
-    margin-top: 0.4rem;
+    margin-top: 1rem;
   }
 
   @media (min-width: 892px) and (max-width: 1300px) {
@@ -122,6 +122,7 @@ export const Title = styled.h1`
 export const Description = styled.p`
   margin: 0 5rem;
   text-align: justify;
+  font-size: 1.2rem;
 
   @media (max-width: 480px) {
     margin: 0 1.5rem 0rem 1.5rem;
@@ -129,14 +130,16 @@ export const Description = styled.p`
 
   @media (min-width: 480px) and (max-width: 680px) {
     margin: 0 2.5rem 0rem 2.7rem;
+    font-size: 1.1rem;
   }
 
   @media (min-width: 681px) and (max-width: 891px) {
     margin: 0 2.5rem 0rem 2.7rem;
+    font-size: 1.1rem;
   }
 
   @media (min-width: 892px) and (max-width: 1300px) {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 `;
 
