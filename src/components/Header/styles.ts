@@ -99,7 +99,10 @@ export const Styled = styled(NavLink)`
 export const Styleds = styled(NavLink)`
   text-decoration: none;
   color: ${(props) => props.theme.white};
-  margin-left: 6rem;
+
+  @media screen and (max-width: 680px) {
+    margin-left: 6rem;
+  }
 `;
 
 export const IconsContainer = styled(LogoContainer)`
