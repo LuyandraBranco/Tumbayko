@@ -1,4 +1,5 @@
 // styles.ts
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const HeroContainer = styled.section`
@@ -208,4 +209,9 @@ export const Description = styled.p`
   @media (min-width: 681px) and (max-width: 1092px) {
     font-size: 1rem;
   }
+`;
+
+export const Styled = styled(NavLink)`
+  text-decoration: none;
+  color: ${(props) => props.theme.white};
 `;

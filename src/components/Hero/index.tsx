@@ -12,6 +12,7 @@ import {
   ButtonsContainer,
   ButtonType,
   Information,
+  Styled,
 } from "./styles";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
@@ -47,17 +48,21 @@ export function Hero({ data }: SlideshowProps) {
   return (
     <HeroContainer>
       <LeftButton onClick={prevSlide}>
-          <FaArrowLeft />
-        </LeftButton>
+        <FaArrowLeft />
+      </LeftButton>
       <SlideshowContainer>
-        <TextContainer> 
+        <TextContainer>
           <Information>
             <Title>{data[currentIndex].title}</Title>
             <Description>{data[currentIndex].description}</Description>
           </Information>
           <ButtonsContainer>
-            <ButtonType>Contacte-nos</ButtonType>
-            <ButtonType>Obtenha Informações</ButtonType>
+            <Styled to="/contact">
+              <ButtonType>Contacte-nos</ButtonType>
+            </Styled>
+            <Styled to="/about">
+              <ButtonType>Obtenha Informações</ButtonType>
+            </Styled>
           </ButtonsContainer>
         </TextContainer>
         <ImageContainer>
@@ -68,8 +73,8 @@ export function Hero({ data }: SlideshowProps) {
         </ImageContainer>
       </SlideshowContainer>
       <RightButton onClick={nextSlide}>
-          <FaArrowRight />
-        </RightButton>
+        <FaArrowRight />
+      </RightButton>
     </HeroContainer>
   );
 }
