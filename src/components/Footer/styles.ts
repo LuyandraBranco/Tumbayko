@@ -17,10 +17,14 @@ export const FooterContainer = styled.footer`
 
 export const FirstContainer = styled.div`
   width: 100%;
-  height: 18rem;
+  height: 19rem;
   display: flex;
   justify-content: center;
-  background: linear-gradient(270deg, #FF7538, ${props=>props.theme["orange-500"]});
+  background: linear-gradient(
+    270deg,
+    #ff7538,
+    ${(props) => props.theme["orange-500"]}
+  );
 
   @media (max-width: 680px) {
     height: auto;
@@ -87,7 +91,6 @@ export const Logo = styled.img`
 export const TextContainer = styled.div`
   width: 100%;
   height: 7rem;
-  margin-bottom: 0.5rem;
 
   @media (max-width: 680px) {
     width: 90%;
@@ -125,7 +128,7 @@ export const MediaContainer = styled.div`
   height: 3rem;
   display: flex;
   margin-left: 7%;
-  margin-top: 0.5rem;
+  margin-top: 0.1rem;
 
   @media (max-width: 480px) {
     margin-left: 5.5%;
@@ -344,3 +347,31 @@ export const Link = styled.a`
   color: ${(props) => props.theme.white};
   font-weight: 600;
 `;
+
+export const Select = styled.select`
+  width: 60%;
+  padding: 0.2rem;
+  height: 2rem;
+  color: ${(props) => props.theme["gray-900"]};
+  margin-left: 2rem;
+  border: 1.5px solid ${(props) => props.theme["gray-900"]};
+  font-size: 0.875rem;
+  margin-top: 0.6rem;
+  border: none;
+
+  @media (max-width: 480px) {
+    margin-left: 7%;
+    margin-right: 0;
+  }
+
+  @media (min-width: 481px) and (max-width: 680px) {
+    margin-left: 7%;
+    margin-right: 0;
+  }
+
+  @media (min-width: 681px) and (max-width: 891px) {
+    font-size: 0.7rem;
+    margin-left: 1rem;
+  }
+`;
+export const Option = styled.option``;

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, ChangeEvent } from "react";
 import {
   FooterContainer,
   FirstContainer,
@@ -24,58 +24,25 @@ import {
   InputContainer,
   Span,
   Link,
+  Select,
+  Option,
 } from "./styles";
 import LogoImage from "../../assets/logo2.png";
-import {
-  FacebookLogo,
-  InstagramLogo,
-  PaperPlaneRight,
-  TiktokLogo,
-} from "phosphor-react";
-// import dotenv from 'dotenv'; // Importe dotenv usando import
-
-// dotenv.config(); // Carrega as variáveis de ambiente do arquivo .env
-
-// import sgMail from '@sendgrid/mail'; // Importe sgMail usando import
-
-// sgMail.setApiKey(process.env.SENDGRID_API_KEY ?? '');
+import { FacebookLogo, InstagramLogo, TiktokLogo } from "phosphor-react";
+import { useTranslation } from "react-i18next";
 
 export function Footer() {
-  const [email, setEmail] = useState("");
+  const { i18n, t } = useTranslation();
+  const place = t('footer-subscribe-placeholder');
+  const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
 
-  const handleSubscribe = async () => {
-    // Verifica se o campo de e-mail está vazio
-    if (!email) {
-      alert("Por favor, insira um endereço de e-mail.");
-      return;
-    }
+  const handleLanguageChange = (event: ChangeEvent<HTMLSelectElement>) => {
+    const newLanguage = event.target.value;
+    setSelectedLanguage(newLanguage);
+    i18n.changeLanguage(newLanguage);
 
-    try {
-      // Chama a função de envio de e-mail para notificação
-      await sendNotificationEmail(email);
-
-      // Limpa o campo de e-mail após o envio
-      setEmail("");
-      alert("E-mail de notificação enviado com sucesso!");
-    } catch (error) {
-      console.error("Erro ao enviar e-mail de notificação:", error);
-      alert(
-        "Erro ao enviar o e-mail de notificação. Tente novamente mais tarde."
-      );
-    }
-  };
-
-  const sendNotificationEmail = async (userEmail: string) => {
-    const msg = {
-      to: "seu-email@example.com", // Seu endereço de e-mail de notificação
-      from: "seu-email@example.com", // Deve ser um e-mail verificado no SendGrid
-      subject: "Novo usuário inscrito",
-      text: `Novo usuário se inscreveu com o e-mail: ${userEmail}`,
-      html: `<p>Novo usuário se inscreveu com o e-mail: ${userEmail}</p>`,
-    };
-
-    // Envie o e-mail de notificação
-    await sgMail.send(msg);
+    // Salva a preferência de idioma no localStorage
+    localStorage.setItem("preferredLanguage", newLanguage);
   };
 
   return (
@@ -87,9 +54,7 @@ export function Footer() {
           </LogoContainer>
           <TextContainer>
             <Text>
-              Somos uma empresa firmada no comércio internacional, temos como
-              objetivo facilitar o seu acesso ao mercado mundial sem precisar
-              sair de Angola.
+              {t('footer-text')}
             </Text>
           </TextContainer>
           <MediaContainer>
@@ -109,45 +74,43 @@ export function Footer() {
               </ButtonMedia>
             </SocialMedia>
           </MediaContainer>
+          <Select value={selectedLanguage} onChange={handleLanguageChange}>
+            <Option value="pt">{t('footer-option1')}</Option>
+            <Option value="en">{t('footer-option2')}</Option>
+            <Option value="fr">{t('footer-option3')}</Option>
+          </Select>
         </InformationContainer>
         <NavContainer>
-          <Title>Menu</Title>
+          <Title>{t('footer-nav-title')}</Title>
           <Navbar>
             <Item>
-              <StyledLink to="/">Home</StyledLink>
+              <StyledLink to="/">{t('footer-nav-item-1')}</StyledLink>
             </Item>
             <Item>
-              <StyledLink to="/service"> Serviços</StyledLink>
+              <StyledLink to="/service">{t('footer-nav-item-2')}</StyledLink>
             </Item>
             <Item>
-              <StyledLink to="/about">Quem somos</StyledLink>
+              <StyledLink to="/about">{t('footer-nav-item-3')}</StyledLink>
             </Item>
             <Item>
-              <StyledLink to="/contact">Contactos</StyledLink>
+              <StyledLink to="/contact">{t('footer-nav-item-4')}</StyledLink>
             </Item>
           </Navbar>
         </NavContainer>
         <ContactContainer>
-          <Title>Contactos</Title>
+          <Title>{t('footer-contact-title')}</Title>
           <DescriptionContact>+244937385547</DescriptionContact>
           <DescriptionContact>tumbayko.com</DescriptionContact>
           <DescriptionContact>tumbayko@gmail.com</DescriptionContact>
           <DescriptionContact>
-            Angola, Luanda, Avenida 21 de Janeiro
+          {t('footer-contact-address')}
           </DescriptionContact>
         </ContactContainer>
         <SubscribeContainer>
-          <Title>Obtenha as últimas informações</Title>
+          <Title>{t('footer-subscribe-title')}</Title>
           <InputContainer>
-            <Input
-              type="email"
-              placeholder="Digite o seu email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <ButtonSubscribe onClick={handleSubscribe}>
-              Subscreva
-            </ButtonSubscribe>
+            <Input type="email" placeholder={place} />
+            <ButtonSubscribe>{t('footer-subscribe-button')}</ButtonSubscribe>
           </InputContainer>
         </SubscribeContainer>
       </FirstContainer>
@@ -155,13 +118,13 @@ export function Footer() {
         <Span>
           Copyright &copy; 2023{" "}
           <Link href="https://www.instagram.com/tumbayko_tem_tudo/">
-            Tumbayko
+          {t('footer-link-1')}
           </Link>
-          . Todos os direitos Reservados
+          {t('footer-span-1')}
         </Span>
         <Span>
-          Desenvolvido por{" "}
-          <Link href="luyfolio.vercel.app">Luyandra Branco</Link>
+        {t('footer-span-2')}{" "}
+          <Link href="luyfolio.vercel.app"> {t('footer-link-2')}</Link>
         </Span>
       </SecondContainer>
     </FooterContainer>

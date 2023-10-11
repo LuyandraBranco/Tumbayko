@@ -8,17 +8,15 @@ import {
   Styled,
   IconsContainer,
   Button,
-  IconButton,
   Styleds
 } from "./styles";
 import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import Logo from "../../assets/logo.png";
 import { Sidebar } from "../Sidebar";
+import { useTranslation } from 'react-i18next';
 import {
   House,
-  Translate,
-  Moon,
   Phone,
   UsersThree,
   Package,
@@ -28,6 +26,7 @@ export function Header() {
   const [sidebar, setSidebar] = useState(false);
 
   const showSiderbar = () => setSidebar(!sidebar);
+  const { t } = useTranslation();
 
   return (
     <HeaderContainer>
@@ -41,41 +40,33 @@ export function Header() {
           <Item>
             <StyledLink to="/">
               <House size={24} />
-              Home
+             {t('header-home')}
             </StyledLink>
           </Item>
           <Item>
             <StyledLink to="/service">
               {" "}
               <Package size={24} />
-              Serviços
+              {t('header-service')}
             </StyledLink>
           </Item>
           <Item>
             <StyledLink to="/about">
               <UsersThree size={24} />
-              Quem somos
+              {t('header-about')}
             </StyledLink>
           </Item>
           <Item>
             <StyledLink to="/contact">
               <Phone size={24} />
-              Contactos
+              {t('header-contact')}
             </StyledLink>
           </Item>
         </NavLinks>
       </Navbar>
       <IconsContainer>
-        {/* <IconButton>
-          <Translate size={18} />
-        </IconButton>
-
-        <IconButton>
-          <Moon size={18} />
-        </IconButton> */}
-
         <Styled to="/appointment">
-          <Button>Agendamento</Button>
+          <Button>{t('header-agendament')}</Button>
         </Styled>
       </IconsContainer>
       <FaBars onClick={showSiderbar} />

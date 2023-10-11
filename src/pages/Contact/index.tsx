@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import {
   ContactContainer,
   ImageContainer,
@@ -13,38 +14,37 @@ import {
 import Ilustration from "../../assets/Ilustration1.png";
 
 export function Contact() {
+  const {t} = useTranslation();
+  const alt = t('contact-alt1');
   return (
     <ContactContainer>
       <InformationContainer>
-        <Title>Contacte-nos</Title>
+        <Title>{t('contact-title')}</Title>
         <Description>
-          Bem-vindo à Tumbayko Tem Tudo! Estamos muito felizes por você estar
-          aqui. Nossa equipe está pronta para ajudá-lo a tornar suas compras
-          mais fáceis e convenientes em todo o mundo.
+        {t('contact-description')}
           <ContactInformationContainer>
-            <TitleInformation>Informações de Contato:</TitleInformation>
+            <TitleInformation>{t('contact-title-information')}</TitleInformation>
             <DescriptionInformation>
-              <Span>Email:</Span> info@tumbaykotemtudo.com
+              <Span>{t('contact-email-span')}</Span> info@tumbaykotemtudo.com
             </DescriptionInformation>
 
             <DescriptionInformation>
-              <Span>Telefone:</Span> +244937385547 | +244956299620
+              <Span>{t('contact-phone-span')}</Span> +244937385547 | +244956299620
             </DescriptionInformation>
 
             <DescriptionInformation>
-              <Span>Endereço:</Span> Avenida 21 de Janeiro, Rua do Skybar,
-              Luanda, Angola
+              <Span>{t('contact-address-span')}</Span> {t('contact-address-information')}
             </DescriptionInformation>
 
-            <TitleInformation>Horário de Atendimento:</TitleInformation>
+            <TitleInformation>{t('contact-opening-hours-title')}</TitleInformation>
             <DescriptionInformation>
-            Estamos disponíveis de Segunda a Sábado, das 8h às 17h.
+            {t('contact-opening-hours-description')}
             </DescriptionInformation>
           </ContactInformationContainer>
         </Description>
       </InformationContainer>
       <ImageContainer>
-        <Image src={Ilustration} alt="Ilustração contacto" />
+        <Image src={Ilustration} alt={alt} />
       </ImageContainer>
     </ContactContainer>
   );

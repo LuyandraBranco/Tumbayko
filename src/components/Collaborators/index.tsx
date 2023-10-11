@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import {
   CollaboratorsContainer,
   ItemCollaborators,
@@ -11,6 +12,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 export function Collaborators() {
+  const { t } = useTranslation();
   const settings = {
     infinite: true,
     slidesToShow: 5, // Número de slides visíveis ao mesmo tempo
@@ -33,13 +35,13 @@ export function Collaborators() {
   };
   return (
     <CollaboratorsContainer>
-      <Title>Nossos Colaboradores</Title>
+      <Title>{t("collaborators-title")}</Title>
       <ItemCollaborators>
         <Slider {...settings}>
           {CollaboratorsData.map((itemCollaboratorsData) => (
             <CollaboratorsImageContainer key={itemCollaboratorsData.alt}>
               <Image
-               src={`${itemCollaboratorsData.image}?${new Date().getTime()}`}
+                src={`${itemCollaboratorsData.image}?${new Date().getTime()}`}
                 alt={itemCollaboratorsData.alt}
               />
             </CollaboratorsImageContainer>

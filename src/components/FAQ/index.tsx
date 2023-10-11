@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import {
   FAQContainer,
@@ -17,8 +18,10 @@ interface FAQItem {
 }
 
 export function FAQ() {
+  const { t } = useTranslation();
+  const faqData = FAQData();
   const [isOpenArray, setIsOpenArray] = useState(
-    Array(FAQData.length).fill(false)
+    Array(faqData.length).fill(false)
   );
 
   const toggleDetails = (index: number) => {
@@ -28,13 +31,13 @@ export function FAQ() {
   };
 
   // Divide as perguntas em duas colunas
-  const halfLength = Math.ceil(FAQData.length / 2);
-  const firstHalf = FAQData.slice(0, halfLength);
-  const secondHalf = FAQData.slice(halfLength);
+  const halfLength = Math.ceil(faqData.length / 2);
+  const firstHalf = faqData.slice(0, halfLength);
+  const secondHalf = faqData.slice(halfLength);
 
   return (
     <FAQContainer>
-      <Title>perguntas frequentes</Title>
+      <Title>{t("faq-title")}</Title>
       <ItemsFAQContainer>
         <ItemFAQColumn>
           {firstHalf.map((data: FAQItem, index: number) => (

@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import {
   AboutContainer,
   FirstContainer,
@@ -6,7 +7,6 @@ import {
   InformationContainer,
   Title,
   Description,
-  Span,
   SecondContainer,
   ItemSecondContainer,
   ItemTitle,
@@ -15,77 +15,63 @@ import {
 } from "./styles";
 import Ilustration from "../../assets/Ilustration2.jpg";
 export function About() {
+
+  const {t} = useTranslation();
+  const alt = t('about-alt1');
   return (
     <AboutContainer>
       <FirstContainer>
         <InformationContainer>
-          <Title>Quem somos?</Title>
+          <Title>{t('about-title')}</Title>
           <Description>
-            Fundada em 2019, com sede em Luanda, Angola, a{" "}
-            <Span>Tumbayko Tem Tudo</Span> foi criada para facilitar a vida de
-            milhões de pessoas em todo mundo, oferecendo o maior e mais
-            sofisticado serviços de importação, redicionamento de encomendas,
-            compra assistida e armazenamento garantindo aos seus clientes um
-            serviço rápido, confiável, com preço justo e maior comodidade para
-            suas compras não só na Ásia, mas em qualquer parte do mundo. A
-            empresa conta com uma equipe totalmente engajada em melhor atender
-            as necessidades de cada cliente e colaborador. Oferecemos a você a
-            chance de expandir suas comprar e alavancar o seu negócio e adquirir
-            produtos exclusivos com as melhores ofertas. A{" "}
-            <Span>Tumbayko Tem Tudo</Span> torna o seu mundo menos
-            burocrático!!!
+          {t('about-description')}
           </Description>
         </InformationContainer>
         <ImageContainer>
-          <Image src={Ilustration} alt="Ilustração contacto" />
+          <Image src={Ilustration} alt={alt} />
         </ImageContainer>
       </FirstContainer>
       <SecondContainer>
         <ItemSecondContainer>
-          <ItemTitle>Nossa Missão</ItemTitle>
+          <ItemTitle>{t('about-item-second-title-1')}</ItemTitle>
           <List>
             <ItemList>
-              Tornar as suas compras mais fácies em todo o mundo.
+              {t('about-item-second-title-1')}
             </ItemList>
 
-            <ItemList>Oferecer um atendimento rápido e personalizado.</ItemList>
+            <ItemList> {t('about-item-second-list1')}</ItemList>
 
             <ItemList>
-              Soluções para dar resposta integrada as necessidades de cada
-              cliente.
+            {t('about-item-second-list2')}
             </ItemList>
 
-            <ItemList>Estratégia empresarial para importação.</ItemList>
+            <ItemList> {t('about-item-second-list3')}</ItemList>
           </List>
         </ItemSecondContainer>
 
         <ItemSecondContainer>
-          <ItemTitle>Valores</ItemTitle>
+          <ItemTitle> {t('about-item-second-title-2')}</ItemTitle>
           <List>
             <ItemList>
-              Apoiar o seu negócio: Um negócio em crescimento depende de
-              operações sem complicações. Os nossos serviços são simplificados e
-              econômicos, desde compras personalizadas, até envio de matérias de
-              grande porte.
-            </ItemList>
-          </List>
-        </ItemSecondContainer>
-
-        <ItemSecondContainer>
-          <ItemTitle>Inovação</ItemTitle>
-          <List>
-            <ItemList>
-              Explorar continuamente novas ideias, processos e soluções. Criar
-              futuro.
+            {t('about-item-second-list4')}
             </ItemList>
           </List>
         </ItemSecondContainer>
 
         <ItemSecondContainer>
-          <ItemTitle>Excelência</ItemTitle>
+          <ItemTitle> {t('about-item-second-title-3')}</ItemTitle>
           <List>
             <ItemList>
-              Garantir um serviço de excelência com qualidade e eficiência.
+            {t('about-item-second-list5')}
+            </ItemList>
+          </List>
+        </ItemSecondContainer>
+
+        <ItemSecondContainer>
+          <ItemTitle> {t('about-item-second-title-4')}</ItemTitle>
+          <List>
+            <ItemList>
+            {t('about-item-second-list6')}
             </ItemList>
           </List>
         </ItemSecondContainer>

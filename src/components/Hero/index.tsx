@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 import {
   HeroContainer,
   ImageContainer,
@@ -21,6 +22,8 @@ interface SlideshowProps {
 }
 
 export function Hero({ data }: SlideshowProps) {
+  const { t } = useTranslation();
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -58,10 +61,10 @@ export function Hero({ data }: SlideshowProps) {
           </Information>
           <ButtonsContainer>
             <Styled to="/contact">
-              <ButtonType>Contacte-nos</ButtonType>
+              <ButtonType>{t('hero-button1')}</ButtonType>
             </Styled>
             <Styled to="/about">
-              <ButtonType>Obtenha Informações</ButtonType>
+              <ButtonType>{t('hero-button2')}</ButtonType>
             </Styled>
           </ButtonsContainer>
         </TextContainer>

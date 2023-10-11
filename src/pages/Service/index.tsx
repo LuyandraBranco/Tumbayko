@@ -9,27 +9,27 @@ import {
   Button,
 } from "./styles";
 import Ilustration from "../../assets/Ilustration3.jpeg";
+import { useTranslation } from "react-i18next";
 
 export function Service() {
+  const {t} = useTranslation();
+  const alt = t('service-alt1');
   return (
     <ServiceContainer>
       <InformationContainer>
-        <Title>Os nossos serviços</Title>
+        <Title>{t('service-title')}</Title>
         <Description>
-          Somos uma empresa firmada no comércio internacional, temos como
-          objetivo facilitar o seu acesso ao mercado mundial sem precisar sair
-          de Angola.
-          Clique no botão abaixo e tenha acesso ao nosso Manual do Cliente.
+        {t('service-description')}
         </Description>
 
         <Linker href="../../../public/documents/ManualCliente.pdf">
           <Button>
-            Baixar Manual do Cliente
+          {t('service-button1')}
           </Button>
         </Linker>
       </InformationContainer>
       <ImageContainer>
-        <Image src={Ilustration} alt="Ilustração contacto" />
+        <Image src={Ilustration} alt={alt} />
       </ImageContainer>
     </ServiceContainer>
   );
