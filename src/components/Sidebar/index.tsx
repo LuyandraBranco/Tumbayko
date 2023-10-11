@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import {
   ContainerSidebar,
   NavLinks,
@@ -7,8 +8,6 @@ import {
 import { FaTimes } from "react-icons/fa";
 import {
   House,
-  Translate,
-  Moon,
   Phone,
   UsersThree,
   Package,
@@ -16,6 +15,7 @@ import {
 } from "phosphor-react";
 
 export const Sidebar = ({ active }) => {
+  const { t } = useTranslation();
   const closeSidebar = () => {
     active(false);
   };
@@ -28,14 +28,14 @@ export const Sidebar = ({ active }) => {
         <Item>
           <StyledLink to="/" onClick={closeSidebar}>
             <House size={24} />
-            Home
+            {t('header-home')}
           </StyledLink>
         </Item>
         <Item>
           <StyledLink to="/service" onClick={closeSidebar}>
             {" "}
             <Package size={24} />
-            Serviços
+            {t('header-service')}
           </StyledLink>
         </Item>
         <Item>
@@ -47,13 +47,13 @@ export const Sidebar = ({ active }) => {
         <Item>
           <StyledLink to="/contact" onClick={closeSidebar}>
             <Phone size={24} />
-            Contactos
+            {t('header-about')}
           </StyledLink>
         </Item>
         <Item>
         <StyledLink to="/appointment" onClick={closeSidebar}>
           <AddressBook size={24} />
-          Agendamento
+          {t('header-agendament')}
         </StyledLink>
       </Item>
       </NavLinks>
