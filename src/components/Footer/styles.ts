@@ -360,7 +360,7 @@ export const Select = styled.select`
   border: none;
 
   @media (max-width: 480px) {
-    margin-left: 7%;
+    margin-left: 6%;
     margin-right: 0;
   }
 
