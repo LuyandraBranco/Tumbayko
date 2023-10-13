@@ -12,6 +12,7 @@
   "dependencies": {
     "@sendgrid/mail": "^7.7.0",
     "@types/styled-components": "^5.1.27",
+    "axios": "^1.5.1",
     "dotenv": "^16.3.1",
     "i18next": "^23.5.1",
     "i18next-browser-languagedetector": "^7.1.0",
