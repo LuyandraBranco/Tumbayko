@@ -1,5 +1,5 @@
 import DHLogo from '../assets/dhl-logo.svg';
-import FedEx from '../assets/Fedex-logo.svg';
+import FedEx from '../assets/fedex-logo.svg';
 import Adidas from '../assets/adidas-logo.svg';
 import Nike from '../assets/Nike-Logo.svg';
 import Ctt from '../assets/ctt-logo.svg';
