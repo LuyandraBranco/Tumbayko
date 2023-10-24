@@ -67,20 +67,7 @@ export const ItemFAQColumn = styled.div`
   font-size: 1rem;
   color: ${(props) => props.theme["gray-900"]};
   overflow-y: auto;
-  scrollbar-width: thin; /* Para navegadores Firefox */
-  scrollbar-color: ${(props) => props.theme["orange-500"]}${(props) => props.theme["gray-900"]}; /* Cor da thumb e da barra */
-
-  /* Estilizar a thumb do scrollbar */
-  &::-webkit-scrollbar-thumb {
-    background-color: ${(props) => props.theme["orange-500"]};
-    border-radius: 6px; /* Raio para torná-lo meio redondo */
-  }
-
-  /* Estilizar a barra do scrollbar */
-  &::-webkit-scrollbar {
-    width: 8px; /* Largura da barra */
-  }
-
+  
   @media (max-width: 680px) {
     width: 95%;
     height: auto;

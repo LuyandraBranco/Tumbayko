@@ -311,7 +311,7 @@ export const ButtonSubscribe = styled.button`
   }
 
   &:hover {
-    background: ${(props) => props.theme["green-200"]};
+    box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.5);
   }
 `;
 
