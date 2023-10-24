@@ -281,6 +281,7 @@ export const Input = styled.input`
   margin-left: 2rem;
   border: 1.5px solid ${(props) => props.theme["gray-900"]};
   font-size: 0.875rem;
+  margin-bottom: 0.5rem;
 
   @media (max-width: 480px) {
     margin-left: 6%;
@@ -362,11 +363,13 @@ export const Select = styled.select`
   @media (max-width: 480px) {
     margin-left: 6%;
     margin-right: 0;
+    width: 90%;
   }
 
   @media (min-width: 481px) and (max-width: 680px) {
     margin-left: 7%;
     margin-right: 0;
+    width: 90%;
   }
 
   @media (min-width: 681px) and (max-width: 891px) {

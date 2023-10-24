@@ -123,11 +123,11 @@ export const Button = styled.button`
   background: ${(props) => props.theme["orange-500"]};
   border-radius: 4px;
   color: ${(props) => props.theme.white};
-  margin: 0rem 4rem 1rem 4.4rem;
+  margin: 0rem 4rem 1rem 5rem;
   cursor: pointer;
 
   @media (max-width: 480px) {
-    margin: 0 1.5rem 0rem 1.5rem;
+    margin: 0 1.5rem 0rem 2rem;
     margin-top: 1rem;
     font-size: 0.875rem;
   }
@@ -142,4 +142,8 @@ export const Button = styled.button`
     margin: 0 2.5rem 0rem 2.7rem;
     margin-top: 1rem;
   }
+`;
+
+export const  Span= styled.span`
+  color: ${(props) => props.theme["orange-500"]};
 `;

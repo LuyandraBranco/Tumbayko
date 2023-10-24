@@ -1,11 +1,11 @@
-import DHLogo from '../assets/dhl-logo.jpg';
-import FedEx from '../assets/Fedex-logo.png';
-import Adidas from '../assets/adidas-logo.jpg';
+import DHLogo from '../assets/dhl-logo.svg';
+import FedEx from '../assets/Fedex-logo.svg';
+import Adidas from '../assets/adidas-logo.svg';
 import Nike from '../assets/Nike-Logo.jpg';
-import Ctt from '../assets/ctt-logo.png';
-import BackMarket from '../assets/backmarket-logo.png';
+import Ctt from '../assets/ctt-logo.svg';
+import BackMarket from '../assets/backmarket-logo.svg';
 import Ups from '../assets/Ups-logo.png';
-import Ebay from '../assets/ebay-logo.jpg';
+import Ebay from '../assets/ebay-logo.svg';
 
 export const CollaboratorsData = [
   {

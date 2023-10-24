@@ -5,7 +5,6 @@
         "header-about": "À Propos",
         "header-contact": "Contacts",
         "header-agendament": "Rendez-vous",
-
         "hero-title-1": "1. Choisir un Produit ou un Secteur d'Activité",
         "hero-description-1": "Si vous êtes incertain, nous proposons des conseils pour vous aider.",
         "hero-title-2": "2. Recherche de Fournisseurs",
@@ -16,10 +15,8 @@
         "hero-description-4": "Après l'acquisition des marchandises, les fournisseurs les livreront aux entrepôts de Tumbayko, et l'entreprise se chargera de les transporter jusqu'en Angola.",
         "hero-title-5": "5. DÉDOUANEMENT ET LIVRAISON À DOMICILE",
         "hero-description-5": "Après l'arrivée des marchandises au port ou à l'aéroport de Luanda, SNL se charge de les livrer aux marchandises respectives de ses clients.",
-
         "hero-button1": "Contactez-nous",
         "hero-button2": "Obtenir des Informations",
-
         "shipping-title": "Options de Livraison Disponibles : Comment Nous Livrons Vos Commandes",
         "shipping-title-1": "Expédition par Mer",
         "shipping-description-1": "Transport économique par voie maritime, en utilisant des conteneurs sur des navires de charge.",
@@ -27,9 +24,7 @@
         "shipping-description-2": "L'expédition par avion est l'option la plus rapide, utilisant des avions de charge pour transporter des marchandises.",
         "shipping-title-3": "Expédition Terrestre",
         "shipping-description-3": "Le transport par route ou par voie ferrée est polyvalent et adapté à différents types de marchandises et de distances.",
-
         "collaborators-title": "NOS COLLABORATEURS",
-
         "faq-title": "QUESTIONS FRÉQUEMMENT POSÉES",
         "faq-question-1": "Effectuez-vous des livraisons à domicile ? Si oui, quel est le tarif ?",
         "faq-answer-1": "Oui, nous effectuons des livraisons à domicile. Le tarif dépend de l'emplacement et du type de produit.",
@@ -51,7 +46,6 @@
         "faq-answer-9": "Nous ne sommes pas ouverts à des partenariats.",
         "faq-question-10": "Les paiements peuvent-ils être échelonnés ?",
         "faq-answer-10": "Les paiements peuvent être échelonnés.",
-
         "serviceSide-title-1": "Importation",
         "serviceSide-description-1": "Chez Tumbayko Has Everything, nous simplifions l'importation pour vous.",
         "serviceSide-title-2": "Expédition de Bagages",
@@ -60,12 +54,14 @@
         "serviceSide-description-3": "Nous facilitons le transport efficace de vos marchandises.",
         "serviceSide-title-4": "Vente de Matériaux",
         "serviceSide-description-4": "Chez Tumbayko Has Everything, nous proposons de la qualité dans la vente.",
-
         "service-title": "Nos Services",
         "service-description": "Nous sommes une entreprise établie dans le commerce international, ayant pour objectif de faciliter votre accès au marché mondial sans quitter l'Angola. Cliquez sur le bouton ci-dessous pour accéder à notre Manuel du Client.",
         "service-button1": "Télécharger le Manuel du Client",
         "service-alt1": "Illustration de Contact",
-
+        "service-desc": "Téléchargez également nos autres manuels ",
+        "service-and": "et ",
+        "service-EUA": "Manuel du client de EUA vers l'Angola.",
+        "service-CHINA": "Manuel du client de Chine vers l'Angola",
         "contact-title": "Contactez-nous",
         "contact-description": "Bienvenue chez Tumbayko Has Everything ! Nous sommes ravis que vous soyez ici. Notre équipe est prête à vous aider à rendre vos achats dans le monde entier plus faciles et plus pratiques.",
         "contact-title-information": "Coordonnées:",
@@ -76,7 +72,8 @@
         "contact-opening-hours-title": "Heures d'Ouverture :",
         "contact-opening-hours-description": "Nous sommes disponibles du lundi au samedi, de 8h à 17h.",
         "contact-alt1:": "Illustration de Contact",
-
+        "appointment-title": "Comment fonctionne la planification ?",
+        "appointment-description": "La planification de Tumbayko A Tout est un processus simple et efficace conçu pour répondre aux besoins des clients de manière pratique et efficace. Elle offre la possibilité de réserver des rendez-vous pour une variété de services, des consultations médicales aux séances de beauté, en passant par les réparations à domicile et bien plus encore.",
         "about-title": "À Propos de Nous",
         "about-description": "Fondée en 2019, basée à Luanda, en Angola, Tumbayko Has Everything a été créée pour simplifier la vie de millions de personnes dans le monde entier. Nous offrons des services sophistiqués d'importation, de réexpédition de colis, d'assistance à l'achat et de stockage, garantissant à nos clients un service rapide, fiable, équitable et pratique pour leurs achats, non seulement en Asie, mais partout dans le monde. Notre entreprise dispose d'une équipe entièrement engagée à répondre au mieux aux besoins de chaque client et collaborateur. Nous vous offrons la possibilité d'élargir vos achats, de développer votre entreprise et d'acquérir des produits exclusifs avec les meilleures offres. Tumbayko Has Everything simplifie votre monde !",
         "about-alt1": "Illustration de Contact",
@@ -90,7 +87,6 @@
         "about-item-second-list5": "Explorer continuellement de nouvelles idées, des processus et des solutions. Créer l'avenir.",
         "about-item-second-title-4": "Excellence",
         "about-item-second-list6": "Garantir un service d'excellence, de qualité et d'efficacité.",
-
         "footer-text": "Nous sommes une entreprise établie dans le commerce international, avec pour objectif de faciliter votre accès au marché mondial sans quitter l'Angola.",
         "footer-option1": "Portugais",
         "footer-option2": "Anglais",
