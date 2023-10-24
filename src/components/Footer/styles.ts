@@ -172,7 +172,7 @@ export const ButtonMedia = styled.button`
 
     > svg {
       color: ${(props) => props.theme.white};
-    }
+    } gugugj
   } */
 
   @media (max-width: 680px) {
