@@ -12,7 +12,7 @@ export const HeroContainer = styled.section`
   justify-content: center;
 
   @media (max-width: 480px) {
-    height: 35rem;
+    height: 40rem;
   }
 
   @media (min-width: 480px) and (max-width: 680px) {
@@ -29,7 +29,7 @@ export const SlideshowContainer = styled.div`
 
   @media (max-width: 480px) {
     width: 75%;
-    height: 35rem;
+    height: 37rem;
     flex-direction: column-reverse;
   }
 

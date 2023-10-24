@@ -166,14 +166,14 @@ export const ButtonMedia = styled.button`
   > svg {
     color: ${(props) => props.theme["orange-500"]};
   }
-  &:hover {
+  /* &:hover {
     background: ${(props) => props.theme["green-200"]};
     color: ${(props) => props.theme.white};
 
     > svg {
       color: ${(props) => props.theme.white};
     }
-  }
+  } */
 
   @media (max-width: 680px) {
     width: 2rem;
