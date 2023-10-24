@@ -9,7 +9,7 @@ export function WhatsAppButton() {
 
   return (
     <WhatsAppButtonContainer onClick={handleWhatsAppClick}>
-      <WhatsappLogo size={30} />
+      <WhatsappLogo size={30}/>
     </WhatsAppButtonContainer>
   );
 }

@@ -11,7 +11,7 @@ import {
   DescriptionInformation,
   Span,
 } from "./styles";
-import Ilustration from "../../assets/Ilustration1.svg";
+import Ilustration from "../../assets/ilustration1.svg";
 
 export function Contact() {
   const {t} = useTranslation();

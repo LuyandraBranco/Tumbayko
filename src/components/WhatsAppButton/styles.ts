@@ -6,9 +6,9 @@ export const WhatsAppButtonContainer = styled.div`
   right: 1.25rem;
   background-color: ${(props) => props.theme["green-200"]};
   color: ${(props) => props.theme.white};
-  border-radius: 35%;
-  width: 3.75rem;
-  height: 3.75rem;
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,8 +16,8 @@ export const WhatsAppButtonContainer = styled.div`
   z-index: 1000;
 
   @media (max-width: 480px) {
-    width: 3.5rem;
-    height: 3.5re;
+    width: 3.4rem;
+    height: 3.4rem;
     bottom: 0.9rem;
     right: 0.9rem;
   }

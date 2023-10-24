@@ -9,7 +9,7 @@ import {
   Button,
   Span
 } from "./styles";
-import Ilustration from "../../assets/Ilustration3.svg";
+import Ilustration from "../../assets/ilustration3.svg";
 import { useTranslation } from "react-i18next";
 
 export function Service() {
