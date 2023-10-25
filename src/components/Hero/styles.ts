@@ -16,7 +16,7 @@ export const HeroContainer = styled.section`
   }
 
   @media (min-width: 480px) and (max-width: 680px) {
-    height: 40rem;
+    height: 44rem;
   }
 `;
 
@@ -29,13 +29,13 @@ export const SlideshowContainer = styled.div`
 
   @media (max-width: 480px) {
     width: 75%;
-    height: 37rem;
+    height: 38rem;
     flex-direction: column-reverse;
   }
 
   @media (min-width: 480px) and (max-width: 680px) {
     width: 75%;
-    height: 40rem;
+    height: 42rem;
     flex-direction: column-reverse;
   }
 `;
@@ -74,14 +74,14 @@ export const TextContainer = styled.div`
 
   @media (max-width: 480px) {
     width: 100%;
-    height: 20rem;
+    height: 22rem;
     justify-content: center;
     background: ${(props) => props.theme["gray-900"]};
   }
 
   @media (min-width: 480px) and (max-width: 680px) {
     width: 100%;
-    height: 17rem;
+    height: 21rem;
     justify-content: center;
     background: ${(props) => props.theme["gray-900"]};
   }
@@ -149,6 +149,7 @@ export const ButtonType = styled.button`
   }
 
   @media (min-width: 681px) and (max-width: 1092px) {
+    width: 11rem;
     font-size: 0.8rem;
     margin-right: 1rem;
     height: 2.8rem;
