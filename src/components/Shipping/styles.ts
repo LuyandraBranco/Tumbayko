@@ -83,10 +83,11 @@ export const InformationItem = styled.div`
   align-items: center;
   margin: 0 0.5rem;
   border-radius: 6px;
+  transition: 0.5s;
   background: linear-gradient(
     270deg,
     #ff8200,
-    #F28500,
+    #f28500,
     ${(props) => props.theme["orange-500"]}
   );
 

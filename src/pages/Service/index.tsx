@@ -20,17 +20,17 @@ export function Service() {
       <InformationContainer>
         <Title>{t("service-title")}</Title>
         <Description>{t("service-description")}</Description>
-        <Linker href="../../../public/documents/ManualCliente.pdf">
+        <Linker href="/documents/ManualCliente.pdf">
           <Button>{t("service-button1")}</Button>
         </Linker>
 
         <Description>
         {t("service-desc")}
-        <Linker href="../../../public/documents/Manual Do Cliente Da China Para Angola.pdf">
+        <Linker href="/documents/Manual Do Cliente Da China Para Angola.pdf">
           <Span>{t("service-CHINA")}</Span>{" "}
         </Linker>
         {t("service-and")}
-        <Linker href="../../../public/documents/Manual Do Cliente De EUA Para Angola.pdf">
+        <Linker href="/documents/Manual Do Cliente De EUA Para Angola.pdf">
           <Span>{t("service-EUA")}</Span>{" "}
         </Linker>
       </Description>

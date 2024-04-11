@@ -128,7 +128,7 @@ export const MediaContainer = styled.div`
   height: 3rem;
   display: flex;
   margin-left: 7%;
-  margin-top: 0.1rem;
+  margin-top: -1rem;
 
   @media (max-width: 480px) {
     margin-left: 5.5%;
@@ -140,10 +140,15 @@ export const MediaContainer = styled.div`
     margin: 0;
     margin-left: 7%;
   }
-
-  @media (min-width: 890px) and (max-width: 990px) {
-    margin-top: 1.9rem;
+  @media (min-width: 681px) and (max-width: 800px) {
+    margin-top: 2rem;
   }
+
+  @media (min-width: 890px) and (max-width: 1120px) {
+    margin-top: 2.5rem;
+    margin-left: 11%;
+  }
+
 `;
 
 export const SocialMedia = styled.a`
@@ -356,20 +361,27 @@ export const Select = styled.select`
   border: none;
 
   @media (max-width: 480px) {
-    margin-left: 6%;
+    margin-left: 5.2%;
     margin-right: 0;
     width: 90%;
+    height: 2.5rem;
   }
 
   @media (min-width: 481px) and (max-width: 680px) {
     margin-left: 7%;
     margin-right: 0;
     width: 90%;
+    height: 2.5rem;
   }
 
   @media (min-width: 681px) and (max-width: 891px) {
     font-size: 0.7rem;
     margin-left: 1rem;
+    width: 80%;
+  }
+
+  @media (min-width: 891px) and (max-width: 1024px) {
+    width: 80%;
   }
 `;
 export const Option = styled.option``;

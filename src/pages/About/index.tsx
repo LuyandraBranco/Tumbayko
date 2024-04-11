@@ -13,7 +13,7 @@ import {
   List,
   ItemList,
 } from "./styles";
-import Ilustration from "../../assets/ilustration2.jpg";
+import Ilustration from "../../assets/ilustration2.svg";
 export function About() {
 
   const {t} = useTranslation();
